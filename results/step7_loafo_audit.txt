@@ -1,0 +1,184 @@
+HELD OUT: DDoS
+TRAIN: 365063
+INTERNAL TRAIN: 310302
+INTERNAL DEV: 54761
+CALIBRATION: 78230
+KNOWN TEST: 78230
+UNKNOWN TEST: 90592
+FEATURE RANKING top 10: ['Number', 'SSH', 'Protocol Type', 'Min', 'Tot sum', 'Tot size', 'rst_count', 'rst_flag_number', 'AVG', 'syn_count']
+39-feature dev Macro-F1: 0.7834224629055522
+eligibility threshold: 0.7784224629055522
+selected budget: 30
+selected features: ['Number', 'SSH', 'Protocol Type', 'Min', 'Tot sum', 'Tot size', 'rst_count', 'rst_flag_number', 'AVG', 'syn_count', 'TCP', 'Max', 'syn_flag_number', 'HTTPS', 'HTTP', 'fin_count', 'UDP', 'fin_flag_number', 'IAT', 'ece_flag_number', 'IRC', 'ack_flag_number', 'Header_Length', 'ack_count', 'DNS', 'psh_flag_number', 'Time_To_Live', 'ARP', 'Variance', 'ICMP']
+KNOWN TEST accuracy: 0.8533427074012527
+KNOWN TEST balanced accuracy: 0.7877478922300154
+KNOWN TEST Macro-F1: 0.7775585855346462
+KNOWN TEST weighted F1: 0.8561134552062502
+UNKNOWN mean max probability: 0.9985459446907043
+UNKNOWN median max probability: 0.9999996423721313
+UNKNOWN fraction >= 0.90: 0.9956839456022607
+UNKNOWN fraction >= 0.95: 0.9945249028611798
+RAW MSP AUROC/AUPRC: 0.2764602092202421 / 0.4105078748075522
+RAW entropy AUROC/AUPRC: 0.2697211708325896 / 0.39911168100613603
+RAW inverse_margin AUROC/AUPRC: 0.2812051339841358 / 0.41082332756068085
+LEAKAGE CHECKS: all PASS
+
+HELD OUT: DoS
+TRAIN: 367264
+INTERNAL TRAIN: 312173
+INTERNAL DEV: 55091
+CALIBRATION: 78701
+KNOWN TEST: 78701
+UNKNOWN TEST: 87449
+FEATURE RANKING top 10: ['Number', 'SSH', 'Min', 'Protocol Type', 'Tot size', 'Tot sum', 'rst_flag_number', 'AVG', 'rst_count', 'TCP']
+39-feature dev Macro-F1: 0.7776099513194513
+eligibility threshold: 0.7726099513194513
+selected budget: 30
+selected features: ['Number', 'SSH', 'Min', 'Protocol Type', 'Tot size', 'Tot sum', 'rst_flag_number', 'AVG', 'rst_count', 'TCP', 'syn_flag_number', 'Max', 'syn_count', 'HTTPS', 'ack_count', 'HTTP', 'fin_flag_number', 'fin_count', 'UDP', 'ece_flag_number', 'IAT', 'ack_flag_number', 'LLC', 'IRC', 'DNS', 'psh_flag_number', 'Time_To_Live', 'Std', 'ARP', 'ICMP']
+KNOWN TEST accuracy: 0.8529497719215766
+KNOWN TEST balanced accuracy: 0.7878742268712393
+KNOWN TEST Macro-F1: 0.7750750893634993
+KNOWN TEST weighted F1: 0.856201381431758
+UNKNOWN mean max probability: 0.9819543957710266
+UNKNOWN median max probability: 0.9999994039535522
+UNKNOWN fraction >= 0.90: 0.9083465791489898
+UNKNOWN fraction >= 0.95: 0.8985008404898855
+RAW MSP AUROC/AUPRC: 0.3093975994386196 / 0.4118589396577018
+RAW entropy AUROC/AUPRC: 0.3031052496336147 / 0.39633633762040504
+RAW inverse_margin AUROC/AUPRC: 0.31558488363985854 / 0.4081681278823938
+LEAKAGE CHECKS: all PASS
+
+HELD OUT: Mirai
+TRAIN: 358477
+INTERNAL TRAIN: 304704
+INTERNAL DEV: 53773
+CALIBRATION: 76819
+KNOWN TEST: 76819
+UNKNOWN TEST: 100000
+FEATURE RANKING top 10: ['Number', 'SSH', 'Min', 'fin_flag_number', 'Tot size', 'fin_count', 'Max', 'HTTPS', 'syn_count', 'rst_count']
+39-feature dev Macro-F1: 0.7267657356625616
+eligibility threshold: 0.7217657356625616
+selected budget: 30
+selected features: ['Number', 'SSH', 'Min', 'fin_flag_number', 'Tot size', 'fin_count', 'Max', 'HTTPS', 'syn_count', 'rst_count', 'rst_flag_number', 'ack_flag_number', 'Tot sum', 'HTTP', 'Protocol Type', 'syn_flag_number', 'AVG', 'psh_flag_number', 'ack_count', 'ICMP', 'ece_flag_number', 'Header_Length', 'IAT', 'IPv', 'DNS', 'ARP', 'UDP', 'Time_To_Live', 'TCP', 'LLC']
+KNOWN TEST accuracy: 0.7885809500253843
+KNOWN TEST balanced accuracy: 0.742451722155959
+KNOWN TEST Macro-F1: 0.7249423454399323
+KNOWN TEST weighted F1: 0.7923377708748781
+UNKNOWN mean max probability: 0.9887933731079102
+UNKNOWN median max probability: 0.9995112419128418
+UNKNOWN fraction >= 0.90: 0.96981
+UNKNOWN fraction >= 0.95: 0.95287
+RAW MSP AUROC/AUPRC: 0.26797030741092703 / 0.4214777270902812
+RAW entropy AUROC/AUPRC: 0.2643964126713443 / 0.4208582850671117
+RAW inverse_margin AUROC/AUPRC: 0.27366593896041347 / 0.4229734396774
+LEAKAGE CHECKS: all PASS
+
+HELD OUT: Recon
+TRAIN: 358646
+INTERNAL TRAIN: 304848
+INTERNAL DEV: 53798
+CALIBRATION: 76855
+KNOWN TEST: 76855
+UNKNOWN TEST: 99759
+FEATURE RANKING top 10: ['Number', 'SSH', 'Protocol Type', 'Min', 'Tot size', 'Tot sum', 'AVG', 'fin_count', 'Max', 'fin_flag_number']
+39-feature dev Macro-F1: 0.8141137365860792
+eligibility threshold: 0.8091137365860792
+selected budget: 39
+selected features: ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', 'syn_flag_number', 'rst_flag_number', 'psh_flag_number', 'ack_flag_number', 'ece_flag_number', 'cwr_flag_number', 'ack_count', 'syn_count', 'fin_count', 'rst_count', 'HTTP', 'HTTPS', 'DNS', 'Telnet', 'SMTP', 'SSH', 'IRC', 'TCP', 'UDP', 'DHCP', 'ARP', 'ICMP', 'IGMP', 'IPv', 'LLC', 'Tot sum', 'Min', 'Max', 'AVG', 'Std', 'Tot size', 'IAT', 'Number', 'Variance']
+KNOWN TEST accuracy: 0.8738273371934162
+KNOWN TEST balanced accuracy: 0.8267941484699552
+KNOWN TEST Macro-F1: 0.8170288357684218
+KNOWN TEST weighted F1: 0.8753077004487614
+UNKNOWN mean max probability: 0.7310962677001953
+UNKNOWN median max probability: 0.7412968873977661
+UNKNOWN fraction >= 0.90: 0.2613298048296394
+UNKNOWN fraction >= 0.95: 0.16041660401567778
+RAW MSP AUROC/AUPRC: 0.7707477055354957 / 0.7635464141918988
+RAW entropy AUROC/AUPRC: 0.7928080852200756 / 0.7857710201037452
+RAW inverse_margin AUROC/AUPRC: 0.76041407257498 / 0.7445986975712231
+LEAKAGE CHECKS: all PASS
+
+HELD OUT: Spoofing
+TRAIN: 360713
+INTERNAL TRAIN: 306605
+INTERNAL DEV: 54108
+CALIBRATION: 77298
+KNOWN TEST: 77298
+UNKNOWN TEST: 96806
+FEATURE RANKING top 10: ['Number', 'SSH', 'Protocol Type', 'Tot size', 'Tot sum', 'AVG', 'fin_flag_number', 'TCP', 'HTTPS', 'rst_flag_number']
+39-feature dev Macro-F1: 0.7604903714730351
+eligibility threshold: 0.7554903714730351
+selected budget: 30
+selected features: ['Number', 'SSH', 'Protocol Type', 'Tot size', 'Tot sum', 'AVG', 'fin_flag_number', 'TCP', 'HTTPS', 'rst_flag_number', 'fin_count', 'rst_count', 'ack_count', 'syn_count', 'ack_flag_number', 'ICMP', 'HTTP', 'Max', 'psh_flag_number', 'syn_flag_number', 'Min', 'ece_flag_number', 'Variance', 'Header_Length', 'DNS', 'Std', 'IAT', 'IRC', 'Time_To_Live', 'UDP']
+KNOWN TEST accuracy: 0.8200470904809957
+KNOWN TEST balanced accuracy: 0.7668369856445688
+KNOWN TEST Macro-F1: 0.7534204221642705
+KNOWN TEST weighted F1: 0.8215126753681312
+UNKNOWN mean max probability: 0.6258105039596558
+UNKNOWN median max probability: 0.5999917387962341
+UNKNOWN fraction >= 0.90: 0.0993946656198996
+UNKNOWN fraction >= 0.95: 0.05368468896555999
+RAW MSP AUROC/AUPRC: 0.783174002862962 / 0.7793928970001309
+RAW entropy AUROC/AUPRC: 0.8104797854885066 / 0.8091783345132375
+RAW inverse_margin AUROC/AUPRC: 0.7627812139391135 / 0.7438137916234483
+LEAKAGE CHECKS: all PASS
+
+HELD OUT: BruteForce
+TRAIN: 419342
+INTERNAL TRAIN: 356440
+INTERNAL DEV: 62902
+CALIBRATION: 89861
+KNOWN TEST: 89861
+UNKNOWN TEST: 13051
+FEATURE RANKING top 10: ['Number', 'Protocol Type', 'Min', 'Tot sum', 'AVG', 'Tot size', 'fin_count', 'syn_count', 'fin_flag_number', 'HTTPS']
+39-feature dev Macro-F1: 0.8056190865650754
+eligibility threshold: 0.8006190865650754
+selected budget: 30
+selected features: ['Number', 'Protocol Type', 'Min', 'Tot sum', 'AVG', 'Tot size', 'fin_count', 'syn_count', 'fin_flag_number', 'HTTPS', 'TCP', 'Max', 'ICMP', 'ack_flag_number', 'rst_flag_number', 'rst_count', 'syn_flag_number', 'ack_count', 'SSH', 'psh_flag_number', 'IAT', 'Header_Length', 'ece_flag_number', 'UDP', 'HTTP', 'Std', 'ARP', 'Time_To_Live', 'Variance', 'IPv']
+KNOWN TEST accuracy: 0.8373599225470448
+KNOWN TEST balanced accuracy: 0.8143043767739166
+KNOWN TEST Macro-F1: 0.8051973483718496
+KNOWN TEST weighted F1: 0.8396667133683146
+UNKNOWN mean max probability: 0.6480320692062378
+UNKNOWN median max probability: 0.6288349628448486
+UNKNOWN fraction >= 0.90: 0.1125584246417899
+UNKNOWN fraction >= 0.95: 0.06260056700635967
+RAW MSP AUROC/AUPRC: 0.7849790547070676 / 0.28612832136685246
+RAW entropy AUROC/AUPRC: 0.8069100188910685 / 0.30432760845768386
+RAW inverse_margin AUROC/AUPRC: 0.7711631156619143 / 0.2584463077583517
+LEAKAGE CHECKS: all PASS
+
+HELD OUT: Web
+TRAIN: 411211
+INTERNAL TRAIN: 349527
+INTERNAL DEV: 61684
+CALIBRATION: 88119
+KNOWN TEST: 88119
+UNKNOWN TEST: 24666
+FEATURE RANKING top 10: ['Number', 'Protocol Type', 'SSH', 'Min', 'Tot sum', 'Tot size', 'AVG', 'fin_flag_number', 'TCP', 'Max']
+39-feature dev Macro-F1: 0.8153105309942283
+eligibility threshold: 0.8103105309942283
+selected budget: 30
+selected features: ['Number', 'Protocol Type', 'SSH', 'Min', 'Tot sum', 'Tot size', 'AVG', 'fin_flag_number', 'TCP', 'Max', 'syn_count', 'HTTPS', 'fin_count', 'rst_flag_number', 'rst_count', 'syn_flag_number', 'ICMP', 'psh_flag_number', 'ack_count', 'HTTP', 'ack_flag_number', 'UDP', 'ece_flag_number', 'IAT', 'DNS', 'IPv', 'Std', 'Header_Length', 'ARP', 'Time_To_Live']
+KNOWN TEST accuracy: 0.8509288575676074
+KNOWN TEST balanced accuracy: 0.8198309316038855
+KNOWN TEST Macro-F1: 0.8097457505776775
+KNOWN TEST weighted F1: 0.8522206010435392
+UNKNOWN mean max probability: 0.6481607556343079
+UNKNOWN median max probability: 0.6300632953643799
+UNKNOWN fraction >= 0.90: 0.11489499716208545
+UNKNOWN fraction >= 0.95: 0.051123003324414176
+RAW MSP AUROC/AUPRC: 0.8085151504419981 / 0.487041677911326
+RAW entropy AUROC/AUPRC: 0.8334406562493004 / 0.53222215135964
+RAW inverse_margin AUROC/AUPRC: 0.7921234421406183 / 0.42742044329806084
+LEAKAGE CHECKS: all PASS
+
+HELD-OUT FAMILY USED FOR RANKING: NO
+HELD-OUT FAMILY USED FOR BUDGET SELECTION: NO
+CALIBRATION USED FOR MODEL SELECTION: NO
+TEST_KNOWN USED FOR MODEL SELECTION: NO
+TEST_UNKNOWN USED FOR MODEL SELECTION: NO
+THRESHOLDING PERFORMED: NO
+CONFORMAL PERFORMED: NO
+
+STEP 7 VALIDATION: PASS

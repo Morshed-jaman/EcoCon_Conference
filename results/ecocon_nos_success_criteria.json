@@ -1,0 +1,14 @@
+{
+  "primary": [
+    "macro NOS UADR > macro MD UADR",
+    "macro NOS risk < macro MD risk",
+    "macro known rejection in [0.04,0.06]"
+  ],
+  "strong_robustness": "within 0.02 of best existing on >=6/7 and strictly best on >=4/7",
+  "best_paper_target": {
+    "macro_UADR": 0.35,
+    "macro_risk": 0.44,
+    "folds_beat_MD": 5
+  },
+  "alpha": 0.05
+}

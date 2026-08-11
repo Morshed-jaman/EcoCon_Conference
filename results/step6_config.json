@@ -1,0 +1,22 @@
+{
+  "model": "xgboost",
+  "random_seed": 42,
+  "feature_budgets": [
+    39,
+    30,
+    20,
+    15,
+    10,
+    5
+  ],
+  "ranking_method": "xgboost_gain",
+  "epsilon_macro_f1": 0.005,
+  "selection_rule": "smallest budget with dev Macro-F1 >= 39-feature dev Macro-F1 - 0.005",
+  "class_weight_policy": "balanced sample weights computed from fitting labels only",
+  "internal_split_reused_from_step5": true,
+  "calibration_used": false,
+  "loafo_used": false,
+  "test_used_for_selection": false,
+  "development_latency_repetitions": 5,
+  "test_latency_repetitions": 10
+}

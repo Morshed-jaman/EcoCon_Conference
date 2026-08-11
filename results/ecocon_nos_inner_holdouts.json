@@ -1,0 +1,436 @@
+{
+  "DDoS": [
+    {
+      "fine_label": "DoS-HTTP_Flood",
+      "family": "DoS",
+      "rows": 1297
+    },
+    {
+      "fine_label": "Mirai-greeth_flood",
+      "family": "Mirai",
+      "rows": 26314
+    },
+    {
+      "fine_label": "Recon-HostDiscovery",
+      "family": "Recon",
+      "rows": 13564
+    },
+    {
+      "fine_label": "DNS_Spoofing",
+      "family": "Spoofing",
+      "rows": 25761
+    },
+    {
+      "fine_label": "Backdoor_Malware",
+      "family": "Web",
+      "rows": 2195
+    },
+    {
+      "fine_label": "DoS-SYN_Flood",
+      "family": "DoS",
+      "rows": 15244
+    },
+    {
+      "fine_label": "Mirai-greip_flood",
+      "family": "Mirai",
+      "rows": 20102
+    },
+    {
+      "fine_label": "Recon-OSScan",
+      "family": "Recon",
+      "rows": 10163
+    },
+    {
+      "fine_label": "MITM-ArpSpoofing",
+      "family": "Spoofing",
+      "rows": 42003
+    },
+    {
+      "fine_label": "BrowserHijacking",
+      "family": "Web",
+      "rows": 4046
+    },
+    {
+      "fine_label": "DoS-TCP_Flood",
+      "family": "DoS",
+      "rows": 19699
+    },
+    {
+      "fine_label": "Mirai-udpplain",
+      "family": "Mirai",
+      "rows": 23584
+    }
+  ],
+  "DoS": [
+    {
+      "fine_label": "DDoS-ACK_Fragmentation",
+      "family": "DDoS",
+      "rows": 1236
+    },
+    {
+      "fine_label": "Mirai-greeth_flood",
+      "family": "Mirai",
+      "rows": 26314
+    },
+    {
+      "fine_label": "Recon-HostDiscovery",
+      "family": "Recon",
+      "rows": 13564
+    },
+    {
+      "fine_label": "DNS_Spoofing",
+      "family": "Spoofing",
+      "rows": 25761
+    },
+    {
+      "fine_label": "Backdoor_Malware",
+      "family": "Web",
+      "rows": 2195
+    },
+    {
+      "fine_label": "DDoS-ICMP_Flood",
+      "family": "DDoS",
+      "rows": 13787
+    },
+    {
+      "fine_label": "Mirai-greip_flood",
+      "family": "Mirai",
+      "rows": 20102
+    },
+    {
+      "fine_label": "Recon-OSScan",
+      "family": "Recon",
+      "rows": 10163
+    },
+    {
+      "fine_label": "MITM-ArpSpoofing",
+      "family": "Spoofing",
+      "rows": 42003
+    },
+    {
+      "fine_label": "BrowserHijacking",
+      "family": "Web",
+      "rows": 4046
+    },
+    {
+      "fine_label": "DDoS-ICMP_Fragmentation",
+      "family": "DDoS",
+      "rows": 1539
+    },
+    {
+      "fine_label": "Mirai-udpplain",
+      "family": "Mirai",
+      "rows": 23584
+    }
+  ],
+  "Mirai": [
+    {
+      "fine_label": "DDoS-ACK_Fragmentation",
+      "family": "DDoS",
+      "rows": 1236
+    },
+    {
+      "fine_label": "DoS-HTTP_Flood",
+      "family": "DoS",
+      "rows": 1297
+    },
+    {
+      "fine_label": "Recon-HostDiscovery",
+      "family": "Recon",
+      "rows": 13564
+    },
+    {
+      "fine_label": "DNS_Spoofing",
+      "family": "Spoofing",
+      "rows": 25761
+    },
+    {
+      "fine_label": "Backdoor_Malware",
+      "family": "Web",
+      "rows": 2195
+    },
+    {
+      "fine_label": "DDoS-ICMP_Flood",
+      "family": "DDoS",
+      "rows": 13787
+    },
+    {
+      "fine_label": "DoS-SYN_Flood",
+      "family": "DoS",
+      "rows": 15244
+    },
+    {
+      "fine_label": "Recon-OSScan",
+      "family": "Recon",
+      "rows": 10163
+    },
+    {
+      "fine_label": "MITM-ArpSpoofing",
+      "family": "Spoofing",
+      "rows": 42003
+    },
+    {
+      "fine_label": "BrowserHijacking",
+      "family": "Web",
+      "rows": 4046
+    },
+    {
+      "fine_label": "DDoS-ICMP_Fragmentation",
+      "family": "DDoS",
+      "rows": 1539
+    },
+    {
+      "fine_label": "DoS-TCP_Flood",
+      "family": "DoS",
+      "rows": 19699
+    }
+  ],
+  "Recon": [
+    {
+      "fine_label": "DDoS-ACK_Fragmentation",
+      "family": "DDoS",
+      "rows": 1236
+    },
+    {
+      "fine_label": "DoS-HTTP_Flood",
+      "family": "DoS",
+      "rows": 1297
+    },
+    {
+      "fine_label": "Mirai-greeth_flood",
+      "family": "Mirai",
+      "rows": 26314
+    },
+    {
+      "fine_label": "DNS_Spoofing",
+      "family": "Spoofing",
+      "rows": 25761
+    },
+    {
+      "fine_label": "Backdoor_Malware",
+      "family": "Web",
+      "rows": 2195
+    },
+    {
+      "fine_label": "DDoS-ICMP_Flood",
+      "family": "DDoS",
+      "rows": 13787
+    },
+    {
+      "fine_label": "DoS-SYN_Flood",
+      "family": "DoS",
+      "rows": 15244
+    },
+    {
+      "fine_label": "Mirai-greip_flood",
+      "family": "Mirai",
+      "rows": 20102
+    },
+    {
+      "fine_label": "MITM-ArpSpoofing",
+      "family": "Spoofing",
+      "rows": 42003
+    },
+    {
+      "fine_label": "BrowserHijacking",
+      "family": "Web",
+      "rows": 4046
+    },
+    {
+      "fine_label": "DDoS-ICMP_Fragmentation",
+      "family": "DDoS",
+      "rows": 1539
+    },
+    {
+      "fine_label": "DoS-TCP_Flood",
+      "family": "DoS",
+      "rows": 19699
+    }
+  ],
+  "Spoofing": [
+    {
+      "fine_label": "DDoS-ACK_Fragmentation",
+      "family": "DDoS",
+      "rows": 1236
+    },
+    {
+      "fine_label": "DoS-HTTP_Flood",
+      "family": "DoS",
+      "rows": 1297
+    },
+    {
+      "fine_label": "Mirai-greeth_flood",
+      "family": "Mirai",
+      "rows": 26314
+    },
+    {
+      "fine_label": "Recon-HostDiscovery",
+      "family": "Recon",
+      "rows": 13564
+    },
+    {
+      "fine_label": "Backdoor_Malware",
+      "family": "Web",
+      "rows": 2195
+    },
+    {
+      "fine_label": "DDoS-ICMP_Flood",
+      "family": "DDoS",
+      "rows": 13787
+    },
+    {
+      "fine_label": "DoS-SYN_Flood",
+      "family": "DoS",
+      "rows": 15244
+    },
+    {
+      "fine_label": "Mirai-greip_flood",
+      "family": "Mirai",
+      "rows": 20102
+    },
+    {
+      "fine_label": "Recon-OSScan",
+      "family": "Recon",
+      "rows": 10163
+    },
+    {
+      "fine_label": "BrowserHijacking",
+      "family": "Web",
+      "rows": 4046
+    },
+    {
+      "fine_label": "DDoS-ICMP_Fragmentation",
+      "family": "DDoS",
+      "rows": 1539
+    },
+    {
+      "fine_label": "DoS-TCP_Flood",
+      "family": "DoS",
+      "rows": 19699
+    }
+  ],
+  "BruteForce": [
+    {
+      "fine_label": "DDoS-ACK_Fragmentation",
+      "family": "DDoS",
+      "rows": 1236
+    },
+    {
+      "fine_label": "DoS-HTTP_Flood",
+      "family": "DoS",
+      "rows": 1297
+    },
+    {
+      "fine_label": "Mirai-greeth_flood",
+      "family": "Mirai",
+      "rows": 26314
+    },
+    {
+      "fine_label": "Recon-HostDiscovery",
+      "family": "Recon",
+      "rows": 13564
+    },
+    {
+      "fine_label": "DNS_Spoofing",
+      "family": "Spoofing",
+      "rows": 25761
+    },
+    {
+      "fine_label": "Backdoor_Malware",
+      "family": "Web",
+      "rows": 2195
+    },
+    {
+      "fine_label": "DDoS-ICMP_Flood",
+      "family": "DDoS",
+      "rows": 13787
+    },
+    {
+      "fine_label": "DoS-SYN_Flood",
+      "family": "DoS",
+      "rows": 15244
+    },
+    {
+      "fine_label": "Mirai-greip_flood",
+      "family": "Mirai",
+      "rows": 20102
+    },
+    {
+      "fine_label": "Recon-OSScan",
+      "family": "Recon",
+      "rows": 10163
+    },
+    {
+      "fine_label": "MITM-ArpSpoofing",
+      "family": "Spoofing",
+      "rows": 42003
+    },
+    {
+      "fine_label": "BrowserHijacking",
+      "family": "Web",
+      "rows": 4046
+    }
+  ],
+  "Web": [
+    {
+      "fine_label": "DDoS-ACK_Fragmentation",
+      "family": "DDoS",
+      "rows": 1236
+    },
+    {
+      "fine_label": "DoS-HTTP_Flood",
+      "family": "DoS",
+      "rows": 1297
+    },
+    {
+      "fine_label": "Mirai-greeth_flood",
+      "family": "Mirai",
+      "rows": 26314
+    },
+    {
+      "fine_label": "Recon-HostDiscovery",
+      "family": "Recon",
+      "rows": 13564
+    },
+    {
+      "fine_label": "DNS_Spoofing",
+      "family": "Spoofing",
+      "rows": 25761
+    },
+    {
+      "fine_label": "DDoS-ICMP_Flood",
+      "family": "DDoS",
+      "rows": 13787
+    },
+    {
+      "fine_label": "DoS-SYN_Flood",
+      "family": "DoS",
+      "rows": 15244
+    },
+    {
+      "fine_label": "Mirai-greip_flood",
+      "family": "Mirai",
+      "rows": 20102
+    },
+    {
+      "fine_label": "Recon-OSScan",
+      "family": "Recon",
+      "rows": 10163
+    },
+    {
+      "fine_label": "MITM-ArpSpoofing",
+      "family": "Spoofing",
+      "rows": 42003
+    },
+    {
+      "fine_label": "DDoS-ICMP_Fragmentation",
+      "family": "DDoS",
+      "rows": 1539
+    },
+    {
+      "fine_label": "DoS-TCP_Flood",
+      "family": "DoS",
+      "rows": 19699
+    }
+  ]
+}

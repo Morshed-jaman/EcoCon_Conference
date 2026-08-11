@@ -1,0 +1,5 @@
+outcome,comparison,median_paired_difference,effect_direction,wilcoxon_statistic,p_value,note
+UADR,EcoConMD vs MSP,0.0341799220,EcoConMD higher,9.0000000000,0.4687500000,n=7; interpret cautiously
+UADR,EcoConMD vs Entropy,0.0341913572,EcoConMD higher,9.0000000000,0.4687500000,n=7; interpret cautiously
+overall_selective_risk,EcoConMD vs MSP,0.0082475302,EcoConMD higher,13.0000000000,0.9375000000,n=7; interpret cautiously
+overall_selective_risk,EcoConMD vs Entropy,0.0057485230,EcoConMD higher,13.0000000000,0.9375000000,n=7; interpret cautiously

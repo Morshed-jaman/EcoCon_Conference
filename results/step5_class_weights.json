@@ -1,0 +1,25 @@
+{
+  "formula": "n_samples / (n_classes * class_count)",
+  "internal_train_only": {
+    "Benign": 0.7667323497709512,
+    "BruteForce": 5.863665636269964,
+    "DDoS": 0.8445976030574005,
+    "DoS": 0.8749687686187081,
+    "Mirai": 0.7651344537815126,
+    "Recon": 0.7669907001819529,
+    "Spoofing": 0.7903869858851716,
+    "Web": 3.102037339874625
+  },
+  "official_train_only": {
+    "Benign": 0.7667366936753801,
+    "BruteForce": 5.863122605363984,
+    "DDoS": 0.8446025325637871,
+    "DoS": 0.8749714113015209,
+    "Mirai": 0.7651375,
+    "Recon": 0.7669892311437614,
+    "Spoofing": 0.7903846437636504,
+    "Web": 3.1020285532259932
+  },
+  "random_forest": "class_weight=balanced_subsample",
+  "xgboost_and_lightgbm": "equivalent per-row balanced sample weights"
+}

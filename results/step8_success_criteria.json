@@ -1,0 +1,8 @@
+{
+  "frozen_before_unknown_scoring": true,
+  "primary_alpha": 0.05,
+  "primary_success": "EcoConMD macro overall selective risk lower than MSP and Entropy AND macro UADR higher than both",
+  "secondary_success": "EcoConMD UADR exceeds both MSP and Entropy in at least 4 of 7 folds with comparable known rejection",
+  "comparable_known_rejection_definition": "absolute macro known-rejection difference versus the mean of MSP and Entropy <= 0.02",
+  "strong_success": "descriptive improvement for one or more of DDoS, DoS, Mirai"
+}

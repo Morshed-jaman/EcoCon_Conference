@@ -1,0 +1,18 @@
+{
+  "candidates": [
+    "MSP",
+    "Entropy",
+    "MD-Pred",
+    "Min-MD",
+    "MDS",
+    "ClassConditionalKNN",
+    "GlobalKNN"
+  ],
+  "max_inner_folds": 12,
+  "known_rejection_target": 0.05,
+  "max_reference_per_class": 20000,
+  "max_global_reference": 100000,
+  "n_neighbors": 10,
+  "bootstrap_resamples": 1000,
+  "bootstrap_seed": 20260811
+}

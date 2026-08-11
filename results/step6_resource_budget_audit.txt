@@ -1,0 +1,149 @@
+FEATURE RANKING SOURCE: internal train only
+
+RANKED FEATURES: rank | feature | gain
+1 | Number | 454.8972473144531
+2 | SSH | 52.51657485961914
+3 | Protocol Type | 35.70494842529297
+4 | Min | 30.411296844482422
+5 | Tot sum | 21.53695297241211
+6 | AVG | 15.610286712646484
+7 | syn_count | 9.435047149658203
+8 | fin_flag_number | 8.82414436340332
+9 | fin_count | 8.471446990966797
+10 | Max | 8.404019355773926
+11 | HTTPS | 8.31601619720459
+12 | Tot size | 7.76349401473999
+13 | rst_flag_number | 7.7408952713012695
+14 | rst_count | 7.34798526763916
+15 | TCP | 5.704345226287842
+16 | ack_count | 5.236029624938965
+17 | HTTP | 4.927399158477783
+18 | ICMP | 4.886219501495361
+19 | psh_flag_number | 4.821876049041748
+20 | syn_flag_number | 4.752394199371338
+21 | IAT | 4.245008945465088
+22 | ack_flag_number | 4.222845077514648
+23 | ece_flag_number | 4.144716262817383
+24 | UDP | 3.8586246967315674
+25 | Variance | 3.7434465885162354
+26 | Header_Length | 3.5385262966156006
+27 | DNS | 3.4432337284088135
+28 | ARP | 3.146038055419922
+29 | Std | 3.1374900341033936
+30 | Time_To_Live | 2.941675901412964
+31 | LLC | 2.8631539344787598
+32 | IRC | 2.8571455478668213
+33 | IGMP | 2.339841365814209
+34 | IPv | 2.2753007411956787
+35 | cwr_flag_number | 2.2553305625915527
+36 | Rate | 2.1640625
+37 | DHCP | 2.1125006675720215
+38 | Telnet | 0.3926614224910736
+39 | SMTP | 0.39102762937545776
+
+DEVELOPMENT RESULTS
+FEATURES: 39
+best_iteration: 1666
+macro_f1: 0.76824781696306
+balanced_accuracy: 0.778676639486283
+weighted_f1: 0.8309838444806276
+BruteForce_f1: 0.5161936560934891
+Web_f1: 0.5253346890357566
+training_seconds: 410.2475408000173
+median_ms_per_sample: 0.049840944099196954
+model_size_mib: 45.05340576171875
+
+FEATURES: 30
+best_iteration: 1683
+macro_f1: 0.7666007659407981
+balanced_accuracy: 0.7784231080885828
+weighted_f1: 0.8301315726010842
+BruteForce_f1: 0.512753433616743
+Web_f1: 0.5186680121089808
+training_seconds: 307.4374307000544
+median_ms_per_sample: 0.04877034524604074
+model_size_mib: 45.75118160247803
+
+FEATURES: 20
+best_iteration: 1376
+macro_f1: 0.7165063638205744
+balanced_accuracy: 0.7421537964309464
+weighted_f1: 0.793050572763284
+BruteForce_f1: 0.4118709677419355
+Web_f1: 0.4165951359084406
+training_seconds: 230.69907530001365
+median_ms_per_sample: 0.0526892801021873
+model_size_mib: 33.50614547729492
+
+FEATURES: 15
+best_iteration: 1086
+macro_f1: 0.6869862900102407
+balanced_accuracy: 0.7168273860628647
+weighted_f1: 0.7626584256856086
+BruteForce_f1: 0.38570729319628
+Web_f1: 0.400484131253362
+training_seconds: 247.92640370002482
+median_ms_per_sample: 0.04022644033984942
+model_size_mib: 25.8272647857666
+
+FEATURES: 10
+best_iteration: 943
+macro_f1: 0.6640525118264543
+balanced_accuracy: 0.6980879003623058
+weighted_f1: 0.7459826674408333
+BruteForce_f1: 0.34351464435146445
+Web_f1: 0.34475597092419524
+training_seconds: 133.54158079996705
+median_ms_per_sample: 0.05327240676401283
+model_size_mib: 20.395331382751465
+
+FEATURES: 5
+best_iteration: 516
+macro_f1: 0.5863629258333449
+balanced_accuracy: 0.6098607839438548
+weighted_f1: 0.666197166887298
+BruteForce_f1: 0.2852121516444891
+Web_f1: 0.25679727075364417
+training_seconds: 78.86371540010441
+median_ms_per_sample: 0.012641286386970336
+model_size_mib: 8.112557411193848
+
+REFERENCE DEV MACRO-F1: 0.76824781696306
+EPSILON: 0.005
+ELIGIBILITY THRESHOLD: 0.76324781696306
+ELIGIBLE BUDGETS: [30, 39]
+SELECTED BUDGET: 30
+SELECTED FEATURES: ['Number', 'SSH', 'Protocol Type', 'Min', 'Tot sum', 'AVG', 'syn_count', 'fin_flag_number', 'fin_count', 'Max', 'HTTPS', 'Tot size', 'rst_flag_number', 'rst_count', 'TCP', 'ack_count', 'HTTP', 'ICMP', 'psh_flag_number', 'syn_flag_number', 'IAT', 'ack_flag_number', 'ece_flag_number', 'UDP', 'Variance', 'Header_Length', 'DNS', 'ARP', 'Std', 'Time_To_Live']
+SELECTION REASON: Budget 30 is the smallest predeclared budget with internal-dev Macro-F1 >= F1_39 - 0.005 (0.7632478170); official test and calibration were not used.
+
+TEST LOADED AFTER SELECTION: YES
+
+OFFICIAL TEST RESULTS
+FEATURES: 39; accuracy=0.8255589801675035; balanced_accuracy=0.7760109549895551; macro_f1=0.764049382763001; weighted_f1=0.8280798027555499; log_loss=0.4372141659259796; median_ms_per_sample=0.045706121826796536; model_size_mib=43.10847091674805
+FEATURES: 30; accuracy=0.8239906773107962; balanced_accuracy=0.774617352704974; macro_f1=0.761429861149584; weighted_f1=0.8266827542604184; log_loss=0.4396718740463257; median_ms_per_sample=0.045465863819300074; model_size_mib=43.96353244781494
+FEATURES: 20; accuracy=0.7802088892277198; balanced_accuracy=0.739630483088976; macro_f1=0.7130981612837821; weighted_f1=0.7887256114661848; log_loss=0.5206559896469116; median_ms_per_sample=0.035972568858112626; model_size_mib=31.848527908325195
+FEATURES: 15; accuracy=0.7502695520534965; balanced_accuracy=0.7124811409898917; macro_f1=0.6832510192756571; weighted_f1=0.7596808791621616; log_loss=0.5689061284065247; median_ms_per_sample=0.027160808219999173; model_size_mib=23.76581859588623
+FEATURES: 10; accuracy=0.7304370555113865; balanced_accuracy=0.6916813940749952; macro_f1=0.6599304826055239; weighted_f1=0.7430981925286261; log_loss=0.6102758049964905; median_ms_per_sample=0.02333848985555065; model_size_mib=18.40557861328125
+FEATURES: 5; accuracy=0.6529912109694072; balanced_accuracy=0.6090419926783769; macro_f1=0.587490235936077; weighted_f1=0.6671706332975391; log_loss=0.7610580921173096; median_ms_per_sample=0.01091591173960326; model_size_mib=6.533407211303711
+
+SELECTED VS FULL (computational-efficiency proxy; not energy consumption)
+                   metric      full_39  selected_budget  absolute_change  relative_change_percent
+            feature_count    39.000000        30.000000        -9.000000               -23.076923
+                 macro_f1     0.764049         0.761430        -0.002620                -0.342847
+        balanced_accuracy     0.776011         0.774617        -0.001394                -0.179585
+              weighted_f1     0.828080         0.826683        -0.001397                -0.168709
+     median_ms_per_sample     0.045706         0.045466        -0.000240                -0.525658
+       samples_per_second 21878.907245     21994.523275       115.616030                 0.528436
+           model_size_mib    43.108471        43.963532         0.855062                 1.983512
+         training_seconds   388.680737       405.656955        16.976218                 4.367651
+feature_reduction_percent     0.000000        23.076923        23.076923                      NaN
+
+LOAFO NOTE: This closed-set ranking MUST NOT be reused directly for LOAFO. Every Step-7 fold must learn its own ranking from that fold's TRAIN data only.
+
+CALIBRATION USED: NO
+TEST USED FOR FEATURE RANKING: NO
+TEST USED FOR BUDGET SELECTION: NO
+LOAFO PERFORMED: NO
+CONFORMAL PERFORMED: NO
+
+STEP 6 VALIDATION: PASS

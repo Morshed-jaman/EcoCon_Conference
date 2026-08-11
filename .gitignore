@@ -1,0 +1,24 @@
+# Raw and derived datasets
+/CSV/
+/processed/
+
+# Trained model binaries
+/models/
+
+# Large per-row prediction artifacts
+/results/predictions/
+
+# The original Step 8.6 timing file used non-comparable benchmark paths.
+/results/ecocon_nos_efficiency.csv
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and operating-system metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

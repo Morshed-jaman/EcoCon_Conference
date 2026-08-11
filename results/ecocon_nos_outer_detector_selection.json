@@ -1,0 +1,51 @@
+{
+  "DDoS": {
+    "selected_detector": "MD-Pred",
+    "mean_inner_UADR": 0.39028092988677204,
+    "mean_inner_risk": 0.17890369830675856,
+    "inner_folds_used": 12,
+    "selection_reason": "MD-Pred selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "DoS": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.417312228198145,
+    "mean_inner_risk": 0.17898351573703639,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "Mirai": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.5627614948732997,
+    "mean_inner_risk": 0.19875571331518424,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "Recon": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.5651918887404866,
+    "mean_inner_risk": 0.16208896298721276,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "Spoofing": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.5397898666726954,
+    "mean_inner_risk": 0.16876418102833865,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "BruteForce": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.4156929593264227,
+    "mean_inner_risk": 0.20442654830190643,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "Web": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.5325382849343906,
+    "mean_inner_risk": 0.18790086311307427,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  }
+}

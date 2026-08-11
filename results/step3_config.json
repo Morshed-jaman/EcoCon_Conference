@@ -1,0 +1,17 @@
+{
+  "random_seed": 42,
+  "family_cap": 100000,
+  "fine_label_minimum": 1000,
+  "chunk_size": 100000,
+  "feature_count": 39,
+  "sampling_algorithm": "deterministic per-fine-label seeded random-priority streaming reservoir with largest-remainder quotas",
+  "run_datetime_utc": "2026-08-08T22:15:05.817819+00:00",
+  "input_dataset_path": "D:\\CSE_21201016_BRAC\\CON_green\\CSV",
+  "invalid_rejection_priority": [
+    "malformed",
+    "non_numeric",
+    "nan",
+    "positive_inf",
+    "negative_inf"
+  ]
+}

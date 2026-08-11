@@ -1,0 +1,29 @@
+{
+  "method_name": "EcoCon-Fuse",
+  "fusion_type": "nested_dual_view_conformal_max_nonconformity",
+  "signals": [
+    "class_conditional_mahalanobis",
+    "predictive_entropy"
+  ],
+  "primary_alpha": 0.05,
+  "alpha_levels": [
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "calibration_split_ratio": {
+    "stage1": 0.6,
+    "stage2": 0.4
+  },
+  "calibration_split_seed_base": 420,
+  "fusion_formula": "max(-log(p_md), -log(p_entropy))",
+  "equivalent_interpretation": "smallest of the two first-stage conformity p-values represents the strongest anomaly evidence",
+  "threshold_source": "known calibration only",
+  "unknown_used_for_tuning": false,
+  "test_known_used_for_tuning": false,
+  "xgboost_retrained": false,
+  "feature_budget_changed": false
+}

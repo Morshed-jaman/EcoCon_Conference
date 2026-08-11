@@ -1,0 +1,10 @@
+{
+  "primary": [
+    "macro fuse UADR > macro MD UADR",
+    "macro fuse UADR > macro entropy UADR",
+    "macro fuse risk <= macro MD risk",
+    "macro known rejection in [0.04,0.06]"
+  ],
+  "robustness": "beats best existing UADR >=5/7 OR within 0.02 on >=6/7 with better macro UADR",
+  "overconfidence": "DDoS and Mirai rescue remains strong; assess DoS improvement"
+}

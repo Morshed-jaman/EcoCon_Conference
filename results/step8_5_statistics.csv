@@ -1,0 +1,7 @@
+outcome,comparison,median_paired_difference,mean_paired_difference,wins,losses,ties,wilcoxon_statistic,p_value
+UADR,EcoConFuse vs EcoConMD,0.0286449187,0.0091886660,4,3,0,10.0000000000,0.5781250000
+UADR,EcoConFuse vs Entropy,0.1736783725,0.1832526775,4,3,0,6.0000000000,0.2187500000
+UADR,EcoConFuse vs MSP,0.1656578040,0.1855725021,4,3,0,6.0000000000,0.2187500000
+overall_selective_risk,EcoConFuse vs EcoConMD,-0.0110807987,0.0018909648,5,2,0,8.0000000000,0.3750000000
+overall_selective_risk,EcoConFuse vs Entropy,-0.0062981247,-0.0455485643,4,3,0,10.0000000000,0.5781250000
+overall_selective_risk,EcoConFuse vs MSP,-0.0037991175,-0.0459053620,4,3,0,10.0000000000,0.5781250000

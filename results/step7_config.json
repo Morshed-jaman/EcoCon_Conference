@@ -1,0 +1,20 @@
+{
+  "model": "xgboost",
+  "feature_budgets": [
+    39,
+    30,
+    20,
+    15,
+    10,
+    5
+  ],
+  "epsilon_macro_f1": 0.005,
+  "ranking": "fold_specific_xgboost_gain",
+  "random_seed_base": 42,
+  "group_key": "feature_hash",
+  "calibration_used_for_model_selection": false,
+  "test_known_used_for_selection": false,
+  "test_unknown_used_for_selection": false,
+  "thresholding_performed": false,
+  "conformal_performed": false
+}

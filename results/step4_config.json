@@ -1,0 +1,17 @@
+{
+  "random_seed": 42,
+  "train_ratio": 0.7,
+  "calibration_ratio": 0.15,
+  "test_ratio": 0.15,
+  "group_key": "feature_hash",
+  "conflict_policy": "exclude_entire_conflicting_hash_group",
+  "loafo_families": [
+    "DDoS",
+    "DoS",
+    "Mirai",
+    "Recon",
+    "Spoofing",
+    "BruteForce",
+    "Web"
+  ]
+}

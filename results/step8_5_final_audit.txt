@@ -1,0 +1,50 @@
+EcoCon-Fuse was developed after observing that predictive uncertainty and Mahalanobis atypicality exhibited complementary family-level failure modes. Consequently, the original seven-fold fusion evaluation should be interpreted as a final methodological enhancement rather than a fully independent confirmatory experiment. A separate fresh-sample CICIoT2023 confirmation was therefore added where unused raw samples were available.
+
+PRIMARY SUCCESS: FAIL
+ROBUSTNESS SUCCESS: FAIL
+FINAL OUTCOME: OUTCOME C — NO IMPROVEMENT
+FINAL METHOD: EcoCon-MD
+FUSION BEATS ALL: 2/7
+WITHIN 0.02 OF BEST: 3/7
+
+       method  known_rejection_rate     UADR  coverage  review_rate  overall_selective_risk  known_selective_risk
+   EcoConFuse              0.048049 0.302126  0.832690     0.167310                0.460269              0.153896
+     EcoConMD              0.048603 0.292937  0.832528     0.167472                0.458378              0.162706
+      Entropy              0.049012 0.118873  0.929194     0.070806                0.505817              0.138130
+          MSP              0.049759 0.116553  0.930496     0.069504                0.506174              0.137009
+NestedEntropy              0.048211 0.144094  0.906894     0.093106                0.499566              0.146789
+     NestedMD              0.048911 0.294300  0.831761     0.168239                0.458223              0.162728
+
+held_out_family      MSP  Entropy  EcoConMD  EcoConFuse  best_existing_uadr  fusion_regret best_method
+     BruteForce 0.178684 0.161520  0.314535    0.344341            0.314535       0.029806  EcoConFuse
+           DDoS 0.000022 0.000022  0.559895    0.558526            0.559895      -0.001369    EcoConMD
+            DoS 0.000011 0.000000  0.034191    0.173678            0.034191       0.139487  EcoConFuse
+          Mirai 0.000000 0.000000  0.831770    0.662460            0.831770      -0.169310    EcoConMD
+          Recon 0.172566 0.179643  0.148297    0.135857            0.179643      -0.043786     Entropy
+       Spoofing 0.210028 0.222662  0.103206    0.131851            0.222662      -0.090810     Entropy
+            Web 0.254561 0.268264  0.058664    0.108165            0.268264      -0.160099     Entropy
+
+held_out_family  unknown_rows  high_confidence_unknown_rows  high_confidence_percentage  EcoConMD_rescue_rate  EcoConFuse_rescue_rate  absolute_rescue_improvement
+           DDoS         90592                         90096                   99.452490              0.557550                0.556129                    -0.001421
+            DoS         87449                         78573                   89.850084              0.034974                0.080397                     0.045423
+          Mirai        100000                         95287                   95.287000              0.865984                0.686715                    -0.179269
+          Recon         99759                         16003                   16.041660              0.248828                0.166094                    -0.082734
+       Spoofing         96806                          5197                    5.368469              0.131230                0.085434                    -0.045796
+     BruteForce         13051                           817                    6.260057              0.548348                0.526316                    -0.022032
+            Web         24666                          1261                    5.112300              0.045995                0.022205                    -0.023791
+
+held_out_family  fresh_rows  MSP_UADR  Entropy_UADR  EcoConMD_UADR  EcoConFuse_UADR  fraction_maxprob_ge_095  EcoConFuse_rescue_rate_ge_095
+           DDoS        5000    0.0000        0.0000         0.6642           0.6554                   0.9740                       0.646201
+            DoS        5000    0.0000        0.0000         0.1780           0.2242                   0.9924                       0.218460
+          Mirai        5000    0.0000        0.0000         0.8482           0.6656                   0.9684                       0.682363
+          Recon        5000    0.1774        0.1918         0.1928           0.1780                   0.1738                       0.194476
+       Spoofing        5000    0.2384        0.2496         0.0756           0.1282                   0.0538                       0.078067
+
+UNKNOWN USED FOR TRAINING: NO
+UNKNOWN USED FOR CALIBRATION: NO
+UNKNOWN USED FOR FUSION WEIGHTING: NO
+TEST-KNOWN USED FOR CALIBRATION: NO
+XGBOOST RETRAINED: NO
+FEATURE BUDGET CHANGED: NO
+ALPHA CHANGED: NO
+STEP 8.5 VALIDATION: PASS

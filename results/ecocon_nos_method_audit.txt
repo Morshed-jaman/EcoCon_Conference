@@ -1,0 +1,89 @@
+EcoCon-NOS does not assume that one uncertainty score is universally optimal. It performs nested open-set validation using fine-grained attack types available within the known training distribution to select an uncertainty channel before encountering the outer unseen attack family.
+This does not guarantee selection of the optimal detector for arbitrary future zero-day attacks.
+
+PRIMARY SUCCESS: True
+STRONG ROBUSTNESS: True
+OUTCOME: A
+FINAL METHOD: EcoCon-NOS
+BEST-PAPER TARGET: True
+
+{
+  "DDoS": {
+    "selected_detector": "MD-Pred",
+    "mean_inner_UADR": 0.39028092988677204,
+    "mean_inner_risk": 0.17890369830675856,
+    "inner_folds_used": 12,
+    "selection_reason": "MD-Pred selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "DoS": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.417312228198145,
+    "mean_inner_risk": 0.17898351573703639,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "Mirai": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.5627614948732997,
+    "mean_inner_risk": 0.19875571331518424,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "Recon": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.5651918887404866,
+    "mean_inner_risk": 0.16208896298721276,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "Spoofing": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.5397898666726954,
+    "mean_inner_risk": 0.16876418102833865,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "BruteForce": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.4156929593264227,
+    "mean_inner_risk": 0.20442654830190643,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  },
+  "Web": {
+    "selected_detector": "ClassConditionalKNN",
+    "mean_inner_UADR": 0.5325382849343906,
+    "mean_inner_risk": 0.18790086311307427,
+    "inner_folds_used": 12,
+    "selection_reason": "ClassConditionalKNN selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order."
+  }
+}
+
+       method  known_rejection_rate     UADR  coverage  review_rate  overall_selective_risk
+   EcoConFuse              0.048049 0.302126  0.832690     0.167310                0.460269
+     EcoConMD              0.048603 0.292937  0.832528     0.167472                0.458378
+    EcoConNOS              0.050182 0.387331  0.789632     0.210368                0.419040
+      Entropy              0.049012 0.118873  0.929194     0.070806                0.505817
+ForcedXGBoost              0.000000 0.000000  1.000000     0.000000                0.531088
+          MSP              0.049759 0.116553  0.930496     0.069504                0.506174
+
+held_out_family      MSP  Entropy  EcoConMD  EcoConNOS  best_existing  NOS_regret
+     BruteForce 0.178684 0.161520  0.314535   0.394299       0.314535    0.079764
+           DDoS 0.000022 0.000022  0.559895   0.556539       0.559895   -0.003356
+            DoS 0.000011 0.000000  0.034191   0.040675       0.034191    0.006484
+          Mirai 0.000000 0.000000  0.831770   0.999610       0.831770    0.167840
+          Recon 0.172566 0.179643  0.148297   0.323028       0.179643    0.143386
+       Spoofing 0.210028 0.222662  0.103206   0.211082       0.222662   -0.011580
+            Web 0.254561 0.268264  0.058664   0.186086       0.268264   -0.082178
+
+Outer unknown used for candidate design: NO
+Outer unknown used for candidate selection: NO
+Outer unknown used for threshold selection: NO
+Outer test-known used for detector selection: NO
+Outer calibration used for detector selection: NO
+Outer calibration used for threshold calibration: YES
+Inner pseudo-OOD generated only from outer training: YES
+XGBoost retrained: NO
+Feature budget changed: NO
+Alpha changed: NO
+VALIDATION: PASS

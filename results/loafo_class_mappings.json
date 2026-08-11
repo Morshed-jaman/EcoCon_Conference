@@ -1,0 +1,65 @@
+{
+  "DDoS": {
+    "Benign": 0,
+    "BruteForce": 1,
+    "DoS": 2,
+    "Mirai": 3,
+    "Recon": 4,
+    "Spoofing": 5,
+    "Web": 6
+  },
+  "DoS": {
+    "Benign": 0,
+    "BruteForce": 1,
+    "DDoS": 2,
+    "Mirai": 3,
+    "Recon": 4,
+    "Spoofing": 5,
+    "Web": 6
+  },
+  "Mirai": {
+    "Benign": 0,
+    "BruteForce": 1,
+    "DDoS": 2,
+    "DoS": 3,
+    "Recon": 4,
+    "Spoofing": 5,
+    "Web": 6
+  },
+  "Recon": {
+    "Benign": 0,
+    "BruteForce": 1,
+    "DDoS": 2,
+    "DoS": 3,
+    "Mirai": 4,
+    "Spoofing": 5,
+    "Web": 6
+  },
+  "Spoofing": {
+    "Benign": 0,
+    "BruteForce": 1,
+    "DDoS": 2,
+    "DoS": 3,
+    "Mirai": 4,
+    "Recon": 5,
+    "Web": 6
+  },
+  "BruteForce": {
+    "Benign": 0,
+    "DDoS": 1,
+    "DoS": 2,
+    "Mirai": 3,
+    "Recon": 4,
+    "Spoofing": 5,
+    "Web": 6
+  },
+  "Web": {
+    "Benign": 0,
+    "BruteForce": 1,
+    "DDoS": 2,
+    "DoS": 3,
+    "Mirai": 4,
+    "Recon": 5,
+    "Spoofing": 6
+  }
+}

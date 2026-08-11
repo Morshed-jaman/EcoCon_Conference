@@ -1,0 +1,181 @@
+METHODS: ForcedXGBoost, MSP, Entropy, InverseMargin, ProbabilityConformal, EcoConMD
+ALPHA LEVELS: [0.01, 0.025, 0.05, 0.1, 0.15, 0.2]
+PRIMARY ALPHA = 0.05
+Conformal limitation: calibration controls known-data false rejection only under relevant exchangeability assumptions; it does not guarantee unseen-family/OOD detection.
+
+HELD OUT: DDoS
+SELECTED FEATURES: 30
+CALIBRATION/KNOWN/UNKNOWN: 78230/78230/90592
+RAW MD AUROC/AUPRC: {'auroc': 0.8051153539999005, 'auprc': 0.8649390712850077}
+ForcedXGBoost: known_rejection=0.0, UADR=0.0, coverage=1.0, overall_risk=0.6045716790465697, known_risk=0.1466572925987473
+MSP: known_rejection=0.04936725041544165, UADR=2.2077004592016954e-05, coverage=0.9771119877741052, overall_risk=0.6035051346403327, known_risk=0.12052226764199656
+Entropy: known_rejection=0.04916272529720056, UADR=2.2077004592016954e-05, coverage=0.9772067621518522, overall_risk=0.6040588213900372, known_risk=0.12185416218541621
+InverseMargin: known_rejection=0.04944394733478205, UADR=0.00036427057576827977, coverage=0.9768928220255654, overall_risk=0.6043863425518885, known_risk=0.12260294236303489
+ProbabilityConformal: known_rejection=0.04934168477566151, UADR=2.2077004592016954e-05, coverage=0.9771238345713237, overall_risk=0.603503879728419, known_risk=0.12053247277127874
+EcoConMD: known_rejection=0.04769270100984277, UADR=0.559894913458142, coverage=0.6774531755339944, overall_risk=0.44498946392816235, known_risk=0.14796171760694773
+OVERCONFIDENT RESCUE: {'held_out_family': 'DDoS', 'unknown_ge_095_count': 90096, 'unknown_ge_095_percentage': 99.45249028611798, 'ecocon_rejected_count': 50233, 'ecocon_rescue_rate': 0.5575497247380572}
+
+HELD OUT: DoS
+SELECTED FEATURES: 30
+CALIBRATION/KNOWN/UNKNOWN: 78701/78701/87449
+RAW MD AUROC/AUPRC: {'auroc': 0.8053945353566655, 'auprc': 0.7197599152237111}
+ForcedXGBoost: known_rejection=0.0, UADR=0.0, coverage=1.0, overall_risk=0.5959795365633463, known_risk=0.1470502280784234
+MSP: known_rejection=0.04937675506029148, UADR=1.1435236537867785e-05, coverage=0.9766054769786338, overall_risk=0.5947073578080031, known_risk=0.12097841341976877
+Entropy: known_rejection=0.050126427872581036, UADR=0.0, coverage=0.9762563948239542, overall_risk=0.595067969544712, known_risk=0.12138156134624646
+InverseMargin: known_rejection=0.05063468062667564, UADR=0.0009719951057187618, coverage=0.9755040625940415, overall_risk=0.5954035044422508, known_risk=0.12231650516622945
+ProbabilityConformal: known_rejection=0.04937675506029148, UADR=1.1435236537867785e-05, coverage=0.9766054769786338, overall_risk=0.5947073578080031, known_risk=0.12097841341976877
+EcoConMD: known_rejection=0.04905909708898235, UADR=0.03419135724822468, coverage=0.9587661751429432, overall_risk=0.6005059667668975, known_risk=0.14966595403527524
+OVERCONFIDENT RESCUE: {'held_out_family': 'DoS', 'unknown_ge_095_count': 78573, 'unknown_ge_095_percentage': 89.85008404898855, 'ecocon_rejected_count': 2748, 'ecocon_rescue_rate': 0.0349738459776259}
+
+HELD OUT: Mirai
+SELECTED FEATURES: 30
+CALIBRATION/KNOWN/UNKNOWN: 76819/76819/100000
+RAW MD AUROC/AUPRC: {'auroc': 0.9436514928598394, 'auprc': 0.9520593296341853}
+ForcedXGBoost: known_rejection=0.0, UADR=0.0, coverage=1.0, overall_risk=0.6574010711518559, known_risk=0.21141904997461566
+MSP: known_rejection=0.050521355393847875, UADR=0.0, coverage=0.9780510013064206, overall_risk=0.657599833466329, known_risk=0.18815980695933532
+Entropy: known_rejection=0.048750960048946225, UADR=0.0, coverage=0.9788201494183317, overall_risk=0.6577359973190658, known_risk=0.18935599529244326
+InverseMargin: known_rejection=0.05037816165271612, UADR=0.00134, coverage=0.9773553747052071, overall_risk=0.6586233833868588, known_risk=0.19128432192353562
+ProbabilityConformal: known_rejection=0.050521355393847875, UADR=0.0, coverage=0.9780510013064206, overall_risk=0.657599833466329, known_risk=0.18815980695933532
+EcoConMD: known_rejection=0.04947994636743514, UADR=0.83177, coverage=0.5080958494279461, overall_risk=0.36219543415589767, known_risk=0.21524829494097344
+OVERCONFIDENT RESCUE: {'held_out_family': 'Mirai', 'unknown_ge_095_count': 95287, 'unknown_ge_095_percentage': 95.287, 'ecocon_rejected_count': 82517, 'ecocon_rescue_rate': 0.8659838173098114}
+
+HELD OUT: Recon
+SELECTED FEATURES: 39
+CALIBRATION/KNOWN/UNKNOWN: 76855/76855/99759
+RAW MD AUROC/AUPRC: {'auroc': 0.7341345307600202, 'auprc': 0.7733695871512117}
+ForcedXGBoost: known_rejection=0.0, UADR=0.0, coverage=1.0, overall_risk=0.6197470189226222, known_risk=0.12617266280658382
+MSP: known_rejection=0.05027649469780756, UADR=0.17256588377990958, coverage=0.8806493256480233, overall_risk=0.5799209181213232, known_risk=0.10486224329026866
+Entropy: known_rejection=0.04832476741916596, UADR=0.17964293948415683, coverage=0.8775012173440384, overall_risk=0.578194465056556, known_risk=0.10623316607648241
+InverseMargin: known_rejection=0.049547849847114696, UADR=0.1233773393879249, coverage=0.9087501557067956, overall_risk=0.5930291966255031, known_risk=0.10580858899064985
+ProbabilityConformal: known_rejection=0.04989916075727018, UADR=0.17256588377990958, coverage=0.8808135255415765, overall_risk=0.5799156617212209, known_risk=0.10503971514653519
+EcoConMD: known_rejection=0.048168629236874635, UADR=0.14829739672610992, coverage=0.8952744403048456, overall_risk=0.5957765719272948, known_risk=0.12628326931226333
+OVERCONFIDENT RESCUE: {'held_out_family': 'Recon', 'unknown_ge_095_count': 16003, 'unknown_ge_095_percentage': 16.04166040156778, 'ecocon_rejected_count': 3982, 'ecocon_rescue_rate': 0.2488283446853715}
+
+HELD OUT: Spoofing
+SELECTED FEATURES: 30
+CALIBRATION/KNOWN/UNKNOWN: 77298/77298/96806
+RAW MD AUROC/AUPRC: {'auroc': 0.7253057456447451, 'auprc': 0.7159042124354743}
+ForcedXGBoost: known_rejection=0.0, UADR=0.0, coverage=1.0, overall_risk=0.6359187612002022, known_risk=0.17995290951900436
+MSP: known_rejection=0.04998835674920438, UADR=0.2100283040307419, coverage=0.8610255938979001, overall_risk=0.5871734663927208, known_risk=0.1572568564969905
+Entropy: known_rejection=0.04926388781081011, UADR=0.22266181848232547, coverage=0.8543227036713689, overall_risk=0.5843109835216921, known_risk=0.1586610423186828
+InverseMargin: known_rejection=0.05084219514088333, UADR=0.13257442720492532, coverage=0.9037127234296742, overall_risk=0.6083068514046015, known_risk=0.16000163559044814
+ProbabilityConformal: known_rejection=0.04998835674920438, UADR=0.209997314216061, coverage=0.861042824978174, overall_risk=0.5871817278251763, known_risk=0.1572568564969905
+EcoConMD: known_rejection=0.049121581412196955, UADR=0.10320641282565131, coverage=0.9208059550613427, overall_risk=0.6255582724119864, known_risk=0.18329002326498958
+OVERCONFIDENT RESCUE: {'held_out_family': 'Spoofing', 'unknown_ge_095_count': 5197, 'unknown_ge_095_percentage': 5.368468896555998, 'ecocon_rejected_count': 682, 'ecocon_rescue_rate': 0.13122955551279583}
+
+HELD OUT: BruteForce
+SELECTED FEATURES: 30
+CALIBRATION/KNOWN/UNKNOWN: 89861/89861/13051
+RAW MD AUROC/AUPRC: {'auroc': 0.6727434325686793, 'auprc': 0.431543435526323}
+ForcedXGBoost: known_rejection=0.0, UADR=0.0, coverage=1.0, overall_risk=0.26883162313432835, known_risk=0.1626400774529551
+MSP: known_rejection=0.04859727801827267, UADR=0.17868362577580263, coverage=0.9349055503731343, overall_risk=0.23616351220729007, known_risk=0.14039581725033334
+Entropy: known_rejection=0.04845261014233093, UADR=0.16152019002375298, coverage=0.9372084888059702, overall_risk=0.23866251944012443, known_risk=0.14122820353889154
+InverseMargin: known_rejection=0.05015523975918363, UADR=0.13271013715424104, coverage=0.9393753886815921, overall_risk=0.24218758081367084, known_risk=0.1416922464090728
+ProbabilityConformal: known_rejection=0.04859727801827267, UADR=0.17868362577580263, coverage=0.9349055503731343, overall_risk=0.23616351220729007, known_risk=0.14039581725033334
+EcoConMD: known_rejection=0.048241172477493016, UADR=0.31453528465251707, coverage=0.917988184079602, overall_risk=0.24441104242526887, known_risk=0.16537661062133152
+OVERCONFIDENT RESCUE: {'held_out_family': 'BruteForce', 'unknown_ge_095_count': 817, 'unknown_ge_095_percentage': 6.2600567006359675, 'ecocon_rejected_count': 448, 'ecocon_rescue_rate': 0.5483476132190942}
+
+HELD OUT: Web
+SELECTED FEATURES: 30
+CALIBRATION/KNOWN/UNKNOWN: 88119/88119/24666
+RAW MD AUROC/AUPRC: {'auroc': 0.6236992659360254, 'auprc': 0.2711996882409912}
+ForcedXGBoost: known_rejection=0.0, UADR=0.0, coverage=1.0, overall_risk=0.3351686837788713, known_risk=0.14907114243239256
+MSP: known_rejection=0.05018214006059987, UADR=0.2545609340792994, coverage=0.9051203617502327, overall_risk=0.2841483484189491, known_risk=0.12688626832502958
+Entropy: known_rejection=0.04900191786107423, UADR=0.268264007135328, coverage=0.9030456177683203, overall_risk=0.2826902307314678, known_risk=0.1281965609002279
+InverseMargin: known_rejection=0.050828992612262966, UADR=0.15361225979080514, coverage=0.9266923793057588, overall_risk=0.30230488820000573, known_risk=0.1281563845050215
+ProbabilityConformal: known_rejection=0.05017079177021982, UADR=0.2545609340792994, coverage=0.9051292281775059, overall_risk=0.2841455649703678, known_risk=0.12688475232383092
+EcoConMD: known_rejection=0.04845719992283162, UADR=0.05866374766885592, coverage=0.9493106352795141, overall_risk=0.33520753166212125, known_risk=0.15111688869276915
+OVERCONFIDENT RESCUE: {'held_out_family': 'Web', 'unknown_ge_095_count': 1261, 'unknown_ge_095_percentage': 5.112300332441418, 'ecocon_rejected_count': 58, 'ecocon_rescue_rate': 0.045995241871530534}
+
+MACRO SUMMARY
+                      alpha aggregation  mean_or_aggregate_known_rejection      UADR  coverage  overall_selective_risk  known_selective_risk
+method                                                                                                                                      
+EcoConMD               0.05       macro                           0.048603  0.292937  0.832528                0.458378              0.162706
+Entropy                0.05       macro                           0.049012  0.118873  0.929194                0.505817              0.138130
+ForcedXGBoost          0.05       macro                           0.000000  0.000000  1.000000                0.531088              0.160423
+InverseMargin          0.05       macro                           0.050262  0.077850  0.944040                0.514892              0.138838
+MSP                    0.05       macro                           0.049759  0.116553  0.930496                0.506174              0.137009
+ProbabilityConformal   0.05       macro                           0.049699  0.116549  0.930524                0.506174              0.137035
+
+MICRO SUMMARY
+              method  alpha aggregation  mean_or_aggregate_known_rejection     UADR  coverage  overall_selective_risk  known_selective_risk
+            EcoConMD   0.05       micro                           0.048591 0.326407  0.819401                0.489611              0.162460
+             Entropy   0.05       micro                           0.049003 0.094087  0.929575                0.537123              0.137924
+       ForcedXGBoost   0.05       micro                           0.000000 0.000000  1.000000                0.559233              0.160183
+       InverseMargin   0.05       micro                           0.050270 0.060343  0.944944                0.545617              0.138604
+                 MSP   0.05       micro                           0.049738 0.090101  0.931083                0.537629              0.136801
+ProbabilityConformal   0.05       micro                           0.049682 0.090096  0.931115                0.537630              0.136825
+
+AURC SUMMARY
+held_out_family               method     AURC
+     BruteForce             EcoConMD 0.250039
+     BruteForce              Entropy 0.080172
+     BruteForce        ForcedXGBoost 0.134416
+     BruteForce        InverseMargin 0.082436
+     BruteForce                  MSP 0.080925
+     BruteForce ProbabilityConformal 0.080925
+           DDoS             EcoConMD 0.463868
+           DDoS              Entropy 0.690909
+           DDoS        ForcedXGBoost 0.302286
+           DDoS        InverseMargin 0.610060
+           DDoS                  MSP 0.603489
+           DDoS ProbabilityConformal 0.603489
+            DoS             EcoConMD 0.539245
+            DoS              Entropy 0.598474
+            DoS        ForcedXGBoost 0.297990
+            DoS        InverseMargin 0.574374
+            DoS                  MSP 0.568273
+            DoS ProbabilityConformal 0.568273
+          Mirai             EcoConMD 0.381023
+          Mirai              Entropy 0.608885
+          Mirai        ForcedXGBoost 0.328701
+          Mirai        InverseMargin 0.603283
+          Mirai                  MSP 0.607033
+          Mirai ProbabilityConformal 0.607035
+          Recon             EcoConMD 0.536275
+          Recon              Entropy 0.337837
+          Recon        ForcedXGBoost 0.309874
+          Recon        InverseMargin 0.346224
+          Recon                  MSP 0.343362
+          Recon ProbabilityConformal 0.343360
+       Spoofing             EcoConMD 0.538391
+       Spoofing              Entropy 0.347143
+       Spoofing        ForcedXGBoost 0.317959
+       Spoofing        InverseMargin 0.360098
+       Spoofing                  MSP 0.354627
+       Spoofing ProbabilityConformal 0.354626
+            Web             EcoConMD 0.327716
+            Web              Entropy 0.108388
+            Web        ForcedXGBoost 0.167584
+            Web        InverseMargin 0.113169
+            Web                  MSP 0.110829
+            Web ProbabilityConformal 0.110829
+
+STATISTICAL TESTS
+               outcome          comparison  median_paired_difference effect_direction  wilcoxon_statistic  p_value                      note
+                  UADR     EcoConMD vs MSP                  0.034180  EcoConMD higher                 9.0  0.46875 n=7; interpret cautiously
+                  UADR EcoConMD vs Entropy                  0.034191  EcoConMD higher                 9.0  0.46875 n=7; interpret cautiously
+overall_selective_risk     EcoConMD vs MSP                  0.008248  EcoConMD higher                13.0  0.93750 n=7; interpret cautiously
+overall_selective_risk EcoConMD vs Entropy                  0.005749  EcoConMD higher                13.0  0.93750 n=7; interpret cautiously
+
+ECOCON COMPUTATIONAL OVERHEAD
+held_out_family  test_known_rows  xgboost_ms_per_sample  scaler_ms_per_sample  mahalanobis_ms_per_sample  conformal_lookup_ms_per_sample  ecocon_auxiliary_ms_per_sample  combined_ms_per_sample  overhead_percentage  auxiliary_model_size_mib
+           DDoS            78230               0.047144              0.000212                   0.001179                        0.000262                        0.001432                0.048575             3.037436                  0.007748
+            DoS            78701               0.046465              0.000181                   0.001185                        0.000265                        0.001610                0.048075             3.465624                  0.007573
+          Mirai            76819               0.040136              0.000179                   0.001217                        0.000268                        0.001409                0.041545             3.510509                  0.007429
+          Recon            76855               0.034321              0.000236                   0.001346                        0.000257                        0.001513                0.035834             4.408918                  0.011420
+       Spoofing            77298               0.038931              0.000172                   0.001194                        0.000270                        0.001297                0.040228             3.330883                  0.007715
+     BruteForce            89861               0.030608              0.000176                   0.001238                        0.000269                        0.001393                0.032001             4.550556                  0.007571
+            Web            88119               0.035468              0.000187                   0.001219                        0.000274                        0.001350                0.036818             3.806808                  0.007578
+
+PRIMARY SUCCESS = PASS
+SECONDARY SUCCESS = PASS
+SECONDARY UADR WINS = 4/7
+STRONG SUCCESS = descriptive; see DDoS/DoS/Mirai fold results
+
+UNKNOWN DATA USED FOR THRESHOLD SELECTION: NO
+TEST-KNOWN USED FOR THRESHOLD SELECTION: NO
+XGBOOST RETRAINED: NO
+FEATURE RANKING CHANGED: NO
+
+STEP 8 VALIDATION: PASS

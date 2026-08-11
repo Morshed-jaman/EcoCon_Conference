@@ -1,0 +1,53 @@
+{
+  "reference_budget": 39,
+  "reference_dev_macro_f1": 0.76824781696306,
+  "epsilon": 0.005,
+  "eligibility_threshold": 0.76324781696306,
+  "all_budget_dev_macro_f1": {
+    "39": 0.76824781696306,
+    "30": 0.7666007659407981,
+    "20": 0.7165063638205744,
+    "15": 0.6869862900102407,
+    "10": 0.6640525118264543,
+    "5": 0.5863629258333449
+  },
+  "eligible_budgets": [
+    30,
+    39
+  ],
+  "selected_budget": 30,
+  "selected_features": [
+    "Number",
+    "SSH",
+    "Protocol Type",
+    "Min",
+    "Tot sum",
+    "AVG",
+    "syn_count",
+    "fin_flag_number",
+    "fin_count",
+    "Max",
+    "HTTPS",
+    "Tot size",
+    "rst_flag_number",
+    "rst_count",
+    "TCP",
+    "ack_count",
+    "HTTP",
+    "ICMP",
+    "psh_flag_number",
+    "syn_flag_number",
+    "IAT",
+    "ack_flag_number",
+    "ece_flag_number",
+    "UDP",
+    "Variance",
+    "Header_Length",
+    "DNS",
+    "ARP",
+    "Std",
+    "Time_To_Live"
+  ],
+  "selection_reason": "Budget 30 is the smallest predeclared budget with internal-dev Macro-F1 >= F1_39 - 0.005 (0.7632478170); official test and calibration were not used.",
+  "test_loaded": false
+}

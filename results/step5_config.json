@@ -1,0 +1,80 @@
+{
+  "random_seed": 42,
+  "feature_count": 39,
+  "features": [
+    "Header_Length",
+    "Protocol Type",
+    "Time_To_Live",
+    "Rate",
+    "fin_flag_number",
+    "syn_flag_number",
+    "rst_flag_number",
+    "psh_flag_number",
+    "ack_flag_number",
+    "ece_flag_number",
+    "cwr_flag_number",
+    "ack_count",
+    "syn_count",
+    "fin_count",
+    "rst_count",
+    "HTTP",
+    "HTTPS",
+    "DNS",
+    "Telnet",
+    "SMTP",
+    "SSH",
+    "IRC",
+    "TCP",
+    "UDP",
+    "DHCP",
+    "ARP",
+    "ICMP",
+    "IGMP",
+    "IPv",
+    "LLC",
+    "Tot sum",
+    "Min",
+    "Max",
+    "AVG",
+    "Std",
+    "Tot size",
+    "IAT",
+    "Number",
+    "Variance"
+  ],
+  "primary_metric": "macro_f1",
+  "selection_tolerance": 0.002,
+  "class_weight_policy": "balanced; weights learned from fitting partition labels only",
+  "internal_dev_ratio": 0.15,
+  "number_of_latency_repetitions": {
+    "dev": 5,
+    "test": 10
+  },
+  "calibration_used": false,
+  "models": {
+    "random_forest": {
+      "n_estimators": 300,
+      "max_features": "sqrt",
+      "class_weight": "balanced_subsample"
+    },
+    "xgboost": {
+      "development_n_estimators": 2000,
+      "final_n_estimators": 1667,
+      "learning_rate": 0.05,
+      "max_depth": 8,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "tree_method": "hist",
+      "early_stopping_rounds": 100
+    },
+    "lightgbm": {
+      "development_n_estimators": 2000,
+      "final_n_estimators": 2000,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "early_stopping_rounds": 100
+    }
+  }
+}

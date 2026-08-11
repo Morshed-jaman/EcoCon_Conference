@@ -1,0 +1,132 @@
+FEATURE COUNT: 39
+TRAIN ROWS: 428477
+INTERNAL TRAIN ROWS: 364204
+INTERNAL DEV ROWS: 64273
+INTERNAL HASH OVERLAP: 0
+INTERNAL REPAIRS: 0
+
+CLASS WEIGHTS
+{
+  "formula": "n_samples / (n_classes * class_count)",
+  "internal_train_only": {
+    "Benign": 0.7667323497709512,
+    "BruteForce": 5.863665636269964,
+    "DDoS": 0.8445976030574005,
+    "DoS": 0.8749687686187081,
+    "Mirai": 0.7651344537815126,
+    "Recon": 0.7669907001819529,
+    "Spoofing": 0.7903869858851716,
+    "Web": 3.102037339874625
+  },
+  "official_train_only": {
+    "Benign": 0.7667366936753801,
+    "BruteForce": 5.863122605363984,
+    "DDoS": 0.8446025325637871,
+    "DoS": 0.8749714113015209,
+    "Mirai": 0.7651375,
+    "Recon": 0.7669892311437614,
+    "Spoofing": 0.7903846437636504,
+    "Web": 3.1020285532259932
+  },
+  "random_forest": "class_weight=balanced_subsample",
+  "xgboost_and_lightgbm": "equivalent per-row balanced sample weights"
+}
+
+DEV MODEL: random_forest
+accuracy: 0.8216825105409736
+balanced_accuracy: 0.729771812519688
+macro_f1: 0.7518525143645107
+weighted_f1: 0.8183058159485248
+log_loss: 0.5154805493772969
+training_seconds: 60.22060819994658
+best_iteration: nan
+median_ms_per_sample: 0.02147820235681526
+
+DEV MODEL: xgboost
+accuracy: 0.8286527779938699
+balanced_accuracy: 0.778676639486283
+macro_f1: 0.76824781696306
+weighted_f1: 0.8309838444806276
+log_loss: 0.43293023109436035
+training_seconds: 327.0475698999362
+best_iteration: 1666.0
+median_ms_per_sample: 0.04919475829701861
+
+DEV MODEL: lightgbm
+accuracy: 0.8254165823907395
+balanced_accuracy: 0.7825434730325318
+macro_f1: 0.7636973931414364
+weighted_f1: 0.8291132966724918
+log_loss: 0.4409245253377486
+training_seconds: 130.61562100006267
+best_iteration: 2000.0
+median_ms_per_sample: 0.268242022311045
+
+PREDECLARED PRIMARY MODEL: xgboost
+SELECTION REASON: xgboost had the highest internal-dev Macro-F1 (0.7682478170); no other model was within 0.002.
+
+OFFICIAL TEST MODEL: random_forest
+accuracy: 0.8208322896132608
+balanced_accuracy: 0.7285037440277113
+macro_precision: 0.8044091836281371
+macro_recall: 0.7285037440277113
+macro_f1: 0.7502235114565822
+weighted_f1: 0.8174498411275257
+log_loss: 0.5153092611211861
+per-class F1 Benign: 0.7702835418976715
+per-class F1 BruteForce: 0.5105208692652639
+per-class F1 DDoS: 0.8067527617862144
+per-class F1 DoS: 0.821062509022665
+per-class F1 Mirai: 0.998899816636106
+per-class F1 Recon: 0.7390938813638487
+per-class F1 Spoofing: 0.8997640666333023
+per-class F1 Web: 0.4554106450475855
+median ms/sample: 0.020327946830167105
+samples/sec: 49193.35968136136
+model size bytes: 908360143
+
+OFFICIAL TEST MODEL: xgboost
+accuracy: 0.8255589801675035
+balanced_accuracy: 0.7760109549895551
+macro_precision: 0.7593526923535467
+macro_recall: 0.7760109549895551
+macro_f1: 0.764049382763001
+weighted_f1: 0.8280798027555499
+log_loss: 0.4372141659259796
+per-class F1 Benign: 0.7905117620077321
+per-class F1 BruteForce: 0.5097948836137359
+per-class F1 DDoS: 0.8174101065107712
+per-class F1 DoS: 0.8400070311126736
+per-class F1 Mirai: 0.9992998366285467
+per-class F1 Recon: 0.7371271830839207
+per-class F1 Spoofing: 0.906361686919228
+per-class F1 Web: 0.5118825722273999
+median ms/sample: 0.04462213267408445
+samples/sec: 22410.403539066567
+model size bytes: 45202291
+
+OFFICIAL TEST MODEL: lightgbm
+accuracy: 0.8220738627081541
+balanced_accuracy: 0.7796423082229146
+macro_precision: 0.7520791944588313
+macro_recall: 0.7796423082229146
+macro_f1: 0.7587763319879334
+weighted_f1: 0.826073034852911
+log_loss: 0.4475108903636949
+per-class F1 Benign: 0.788332728412578
+per-class F1 BruteForce: 0.4816924328722539
+per-class F1 DDoS: 0.8166369962777148
+per-class F1 DoS: 0.8423435976034555
+per-class F1 Mirai: 0.999266373215953
+per-class F1 Recon: 0.7291162658317917
+per-class F1 Spoofing: 0.9085497059245445
+per-class F1 Web: 0.5042725557651759
+median ms/sample: 0.34010323625833816
+samples/sec: 2940.283694449801
+model size bytes: 22966478
+
+CALIBRATION SET USED: NO
+FEATURE SELECTION USED: NO
+TEST USED FOR MODEL SELECTION: NO
+
+STEP 5 VALIDATION: PASS

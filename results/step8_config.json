@@ -1,0 +1,28 @@
+{
+  "methods": [
+    "ForcedXGBoost",
+    "MSP",
+    "Entropy",
+    "InverseMargin",
+    "ProbabilityConformal",
+    "EcoConMD"
+  ],
+  "alpha_levels": [
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "primary_alpha": 0.05,
+  "distance": "class_conditional_mahalanobis",
+  "covariance": "LedoitWolf_shared",
+  "distance_target": "xgboost_predicted_class",
+  "conformal_calibration": "predicted_class_conditional",
+  "feature_budgets": "frozen_from_step7",
+  "threshold_source": "calibration_only",
+  "empirical_quantile": "numpy method=higher; reject score >= threshold",
+  "unknown_used_for_tuning": false,
+  "test_known_used_for_tuning": false
+}
