@@ -1,0 +1,26 @@
+claim_id,claim,metric,source_artifact,exact_value,status,caveat,recommended_section
+C01,XGBoost selected using development Macro-F1,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C02,30 features selected under predefined budget rule,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C03,30 features reduce dimension by 23.08%,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C04,30-vs-39 Macro-F1 change is -0.00262,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C05,Severe high-confidence behavior occurs for unseen families,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C06,MSP and entropy can fail on high-confidence unknowns,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C07,EcoCon-MD provides complementary feature-space evidence,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C08,No fixed detector dominated all families,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C09,NOS uses training-only pseudo-unknown folds,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C10,Outer unknown was not used for detector selection,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C11,NOS macro UADR is 0.3873314571,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C12,NOS macro UADR exceeds MSP and entropy,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C13,NOS exceeds EcoCon-MD macro UADR,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C14,NOS lowers overall risk vs MD,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C15,NOS beats MD in 6/7 folds,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C16,NOS vs MD UADR Wilcoxon p=0.03125,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C17,NOS vs MD risk Wilcoxon p=0.03125,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C18,Mirai NOS UADR=0.9996100000,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C19,Mirai high-confidence rescue=0.9998425808,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C20,Recon improves substantially under NOS,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C21,Fresh Mirai and Recon reproduce strong behavior,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C22,Web remains weak,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C23,NOS increases review workload,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C24,Fresh confirmation is within CICIoT2023,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results
+C25,Efficiency is not publication verified,see claim,frozen results,see claim,SUPPORTED,family-dependent; n=7,Results

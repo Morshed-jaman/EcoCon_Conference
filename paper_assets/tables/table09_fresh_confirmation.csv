@@ -1,0 +1,6 @@
+held_out_family,selected_detector,fresh_rows,MSP_UADR,Entropy_UADR,EcoConMD_UADR,EcoConNOS_UADR
+DDoS,MD-Pred,5000,0.0,0.0,0.6642,0.6346
+DoS,ClassConditionalKNN,5000,0.0,0.0,0.178,0.181
+Mirai,ClassConditionalKNN,5000,0.0,0.0,0.8482,0.9996
+Recon,ClassConditionalKNN,5000,0.1774,0.1918,0.1928,0.3742
+Spoofing,ClassConditionalKNN,5000,0.2384,0.2496,0.0756,0.1904

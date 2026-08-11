@@ -1,0 +1,8 @@
+index,MSP,Entropy,MD-Pred,Min-MD,MDS,ClassConditionalKNN,GlobalKNN
+DDoS,0,0,1,0,0,0,0
+DoS,0,0,0,0,0,1,0
+Mirai,0,0,0,0,0,1,0
+Recon,0,0,0,0,0,1,0
+Spoofing,0,0,0,0,0,1,0
+BruteForce,0,0,0,0,0,1,0
+Web,0,0,0,0,0,1,0

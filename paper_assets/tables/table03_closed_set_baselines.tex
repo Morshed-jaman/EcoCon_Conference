@@ -1,0 +1,13 @@
+\begin{table}
+\caption{Closed-set baselines; selection used development Macro-F1 before official test evaluation.}
+\label{tab:table03_closed_set_baselines}
+\begin{tabular}{llllllllllllllll}
+\toprule
+model & feature\_count & accuracy & balanced\_accuracy & macro\_precision & macro\_recall & macro\_f1 & weighted\_f1 & log\_loss & test\_samples & median\_total\_inference\_ms & median\_ms\_per\_sample & samples\_per\_second & training\_seconds & serialized\_model\_size\_bytes & serialized\_model\_size\_mib \\
+\midrule
+random\_forest & 39.0000 & 0.8208 & 0.7285 & 0.8044 & 0.7285 & 0.7502 & 0.8174 & 0.5153 & 91819.0000 & 1866.4917 & 0.0203 & 49193.3597 & 67.9023 & 908360143.0000 & 866.2797 \\
+xgboost & 39.0000 & 0.8256 & 0.7760 & 0.7594 & 0.7760 & 0.7640 & 0.8281 & 0.4372 & 91819.0000 & 4097.1596 & 0.0446 & 22410.4035 & 350.7234 & 45202291.0000 & 43.1083 \\
+lightgbm & 39.0000 & 0.8221 & 0.7796 & 0.7521 & 0.7796 & 0.7588 & 0.8261 & 0.4475 & 91819.0000 & 31227.9391 & 0.3401 & 2940.2837 & 144.2185 & 22966478.0000 & 21.9025 \\
+\bottomrule
+\end{tabular}
+\end{table}

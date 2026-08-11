@@ -1,0 +1,220 @@
+{
+  "data": {
+    "raw_rows": 46776700,
+    "research_pool_rows": 637892,
+    "modeling_pool_rows": 0,
+    "fine_labels": 34,
+    "families": 8
+  },
+  "resource": {
+    "full_features": 39,
+    "selected_features": 30,
+    "feature_reduction_percent": 23.076923076923077,
+    "39_feature_macro_f1": 0.7640493828,
+    "30_feature_macro_f1": 0.7614298611,
+    "absolute_macro_f1_change": -0.002619521700000016
+  },
+  "final_macro": {
+    "EcoConFuse": {
+      "known_rejection_rate": 0.0480486101,
+      "UADR": 0.3021256821,
+      "coverage": 0.8326903491,
+      "review_rate": 0.1673096509,
+      "overall_selective_risk": 0.4602687195
+    },
+    "EcoConMD": {
+      "known_rejection_rate": 0.0486029039,
+      "UADR": 0.2929370161,
+      "coverage": 0.8325277735,
+      "review_rate": 0.1674722265,
+      "overall_selective_risk": 0.4583777548
+    },
+    "EcoConNOS": {
+      "known_rejection_rate": 0.0501817236,
+      "UADR": 0.3873314571,
+      "coverage": 0.7896324763,
+      "review_rate": 0.2103675237,
+      "overall_selective_risk": 0.4190400799
+    },
+    "Entropy": {
+      "known_rejection_rate": 0.0490118995,
+      "UADR": 0.1188730046,
+      "coverage": 0.9291944763,
+      "review_rate": 0.0708055237,
+      "overall_selective_risk": 0.5058172838
+    },
+    "ForcedXGBoost": {
+      "known_rejection_rate": 0.0,
+      "UADR": 0.0,
+      "coverage": 1.0,
+      "review_rate": 0.0,
+      "overall_selective_risk": 0.5310883391
+    },
+    "MSP": {
+      "known_rejection_rate": 0.0497585186,
+      "UADR": 0.11655318,
+      "coverage": 0.930495614,
+      "review_rate": 0.069504386,
+      "overall_selective_risk": 0.5061740816
+    }
+  },
+  "family": {
+    "DDoS": {
+      "selected_detector": "MD-Pred",
+      "inner_pseudo_ood_folds": 12,
+      "inner_mean_UADR": 0.3902809299,
+      "NOS_outer_UADR": 0.5565392088,
+      "MSP_UADR": 2.2077e-05,
+      "Entropy_UADR": 2.2077e-05,
+      "EcoConMD_UADR": 0.5598949135,
+      "known_rejection": 0.0478077464,
+      "coverage": 0.6792005781,
+      "overall_risk": 0.4462080514
+    },
+    "DoS": {
+      "selected_detector": "ClassConditionalKNN",
+      "inner_pseudo_ood_folds": 12,
+      "inner_mean_UADR": 0.4173122282,
+      "NOS_outer_UADR": 0.0406751364,
+      "MSP_UADR": 1.14352e-05,
+      "Entropy_UADR": 0.0,
+      "EcoConMD_UADR": 0.0341913572,
+      "known_rejection": 0.0504567922,
+      "coverage": 0.9546915438,
+      "overall_risk": 0.5958442082
+    },
+    "Mirai": {
+      "selected_detector": "ClassConditionalKNN",
+      "inner_pseudo_ood_folds": 12,
+      "inner_mean_UADR": 0.5627614949,
+      "NOS_outer_UADR": 0.99961,
+      "MSP_UADR": 0.0,
+      "Entropy_UADR": 0.0,
+      "EcoConMD_UADR": 0.83177,
+      "known_rejection": 0.0497533162,
+      "coverage": 0.4130551581,
+      "overall_risk": 0.2095405006
+    },
+    "Recon": {
+      "selected_detector": "ClassConditionalKNN",
+      "inner_pseudo_ood_folds": 12,
+      "inner_mean_UADR": 0.5651918887,
+      "NOS_outer_UADR": 0.3230284987,
+      "MSP_UADR": 0.1725658838,
+      "Entropy_UADR": 0.1796429395,
+      "EcoConMD_UADR": 0.1482973967,
+      "known_rejection": 0.0500943335,
+      "coverage": 0.7957409945,
+      "overall_risk": 0.5443115434
+    },
+    "Spoofing": {
+      "selected_detector": "ClassConditionalKNN",
+      "inner_pseudo_ood_folds": 12,
+      "inner_mean_UADR": 0.5397898667,
+      "NOS_outer_UADR": 0.2110819577,
+      "MSP_UADR": 0.210028304,
+      "Entropy_UADR": 0.2226618185,
+      "EcoConMD_UADR": 0.1032064128,
+      "known_rejection": 0.0510362493,
+      "coverage": 0.859974498,
+      "overall_risk": 0.5959659376
+    },
+    "BruteForce": {
+      "selected_detector": "ClassConditionalKNN",
+      "inner_pseudo_ood_folds": 12,
+      "inner_mean_UADR": 0.4156929593,
+      "NOS_outer_UADR": 0.3942992874,
+      "MSP_UADR": 0.1786836258,
+      "Entropy_UADR": 0.16152019,
+      "EcoConMD_UADR": 0.3145352847,
+      "known_rejection": 0.0516464317,
+      "coverage": 0.9048993315,
+      "overall_risk": 0.2310013423
+    },
+    "Web": {
+      "selected_detector": "ClassConditionalKNN",
+      "inner_pseudo_ood_folds": 12,
+      "inner_mean_UADR": 0.5325382849,
+      "NOS_outer_UADR": 0.1860861104,
+      "MSP_UADR": 0.2545609341,
+      "Entropy_UADR": 0.2682640071,
+      "EcoConMD_UADR": 0.0586637477,
+      "known_rejection": 0.0504771956,
+      "coverage": 0.9198652303,
+      "overall_risk": 0.3104089757
+    }
+  },
+  "statistics": [
+    {
+      "outcome": "UADR",
+      "comparison": "EcoConNOS vs EcoConMD",
+      "mean_paired_difference": 0.094394441,
+      "median_paired_difference": 0.1078755449,
+      "wins": 6,
+      "losses": 1,
+      "ties": 0,
+      "wilcoxon_statistic": 1.0,
+      "p_value": 0.03125
+    },
+    {
+      "outcome": "UADR",
+      "comparison": "EcoConNOS vs Entropy",
+      "mean_paired_difference": 0.2684584525,
+      "median_paired_difference": 0.1433855592,
+      "wins": 5,
+      "losses": 2,
+      "ties": 0,
+      "wilcoxon_statistic": 4.0,
+      "p_value": 0.109375
+    },
+    {
+      "outcome": "UADR",
+      "comparison": "EcoConNOS vs MSP",
+      "mean_paired_difference": 0.2707782771,
+      "median_paired_difference": 0.1504626149,
+      "wins": 6,
+      "losses": 1,
+      "ties": 0,
+      "wilcoxon_statistic": 3.0,
+      "p_value": 0.078125
+    },
+    {
+      "outcome": "overall_selective_risk",
+      "comparison": "EcoConNOS vs EcoConMD",
+      "mean_paired_difference": -0.0393376749,
+      "median_paired_difference": -0.024798556,
+      "wins": 6,
+      "losses": 1,
+      "ties": 0,
+      "wilcoxon_statistic": 1.0,
+      "p_value": 0.03125
+    },
+    {
+      "outcome": "overall_selective_risk",
+      "comparison": "EcoConNOS vs Entropy",
+      "mean_paired_difference": -0.086777204,
+      "median_paired_difference": -0.0076611771,
+      "wins": 4,
+      "losses": 3,
+      "ties": 0,
+      "wilcoxon_statistic": 8.0,
+      "p_value": 0.375
+    },
+    {
+      "outcome": "overall_selective_risk",
+      "comparison": "EcoConNOS vs MSP",
+      "mean_paired_difference": -0.0871340017,
+      "median_paired_difference": -0.0051621699,
+      "wins": 4,
+      "losses": 3,
+      "ties": 0,
+      "wilcoxon_statistic": 8.0,
+      "p_value": 0.375
+    }
+  ],
+  "fold_wins": {
+    "NOS_vs_MSP": 6,
+    "NOS_vs_Entropy": 5,
+    "NOS_vs_MD": 6
+  }
+}

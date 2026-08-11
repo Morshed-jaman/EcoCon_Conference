@@ -1,0 +1,13 @@
+table_id,short_title,paper_caption,main_message,important_caveat,source_artifacts
+Table 1,Dataset summary,Dataset summary,Dataset summary,Rates use frozen artifacts.,results/
+Table 2,Family distribution,Family distribution,Family distribution,Rates use frozen artifacts.,results/
+Table 3,Closed-set baselines,Closed-set baselines,Closed-set baselines,Rates use frozen artifacts.,results/
+Table 4,Feature budget,Feature budget,Feature budget,Rates use frozen artifacts.,results/
+Table 5,Final macro comparison,Final macro comparison,Final macro comparison,Rates use frozen artifacts.,results/
+Table 6,Family results,Family results,Family results,Rates use frozen artifacts.,results/
+Table 7,Detector selection,Detector selection,Detector selection,Rates use frozen artifacts.,results/
+Table 8,Overconfident rescue,Overconfident rescue,Overconfident rescue,Rates use frozen artifacts.,results/
+Table 9,Fresh confirmation,Fresh confirmation,Fresh confirmation,Rates use frozen artifacts.,results/
+Table 10,Statistics,Statistics,Statistics,Rates use frozen artifacts.,results/
+Table 11,Bootstrap intervals,Bootstrap intervals,Bootstrap intervals,Rates use frozen artifacts.,results/
+Table 12,Efficiency status,Efficiency status,Efficiency status,Rates use frozen artifacts.,results/

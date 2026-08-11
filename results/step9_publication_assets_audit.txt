@@ -1,0 +1,20 @@
+SOURCE FILES VERIFIED: 265 inventoried
+FIGURES GENERATED: 20
+TABLES GENERATED: 12 CSV packages (11 with LaTeX; efficiency unverified CSV only)
+DIAGRAMS GENERATED: 4
+CAPTIONS GENERATED: YES
+CLAIMS VERIFIED: 25
+LIMITATIONS RECORDED: YES
+NUMERIC CHECKS: {"review_rate_identity": true, "feature_reduction": true, "NOS_macro_UADR": true, "NOS_macro_risk": true, "selected_detectors_match_json": true, "bootstrap_contains_estimate": true}
+EFFICIENCY STATUS: NOT VERIFIED
+DISCREPANCIES FOUND: NONE
+PUBLICATION-UNSAFE METRICS: efficiency/timing; energy/carbon; external-validation claims
+
+NO MODEL RETRAINING PERFORMED: YES
+NO DETECTOR CHANGES PERFORMED: YES
+NO ALPHA CHANGES PERFORMED: YES
+NO OUTER-TEST TUNING PERFORMED: YES
+NO RESULTS MODIFIED: YES
+
+STEP 9 VALIDATION:
+PASS

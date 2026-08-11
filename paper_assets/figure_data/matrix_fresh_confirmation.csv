@@ -1,0 +1,6 @@
+held_out_family,MSP,Entropy,EcoCon-MD,EcoCon-NOS
+DDoS,0.0,0.0,0.6642,0.6346
+DoS,0.0,0.0,0.178,0.181
+Mirai,0.0,0.0,0.8482,0.9996
+Recon,0.1774,0.1918,0.1928,0.3742
+Spoofing,0.2384,0.2496,0.0756,0.1904

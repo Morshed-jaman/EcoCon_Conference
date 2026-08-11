@@ -1,0 +1,17 @@
+\begin{table}
+\caption{Training-only nested detector selection summary.}
+\label{tab:table07_detector_selection}
+\begin{tabular}{lllllll}
+\toprule
+outer\_family & selected\_detector & inner\_mean\_UADR & second\_best & second\_best\_mean\_UADR & selection\_margin & number\_inner\_folds \\
+\midrule
+DDoS & MD-Pred & 0.3903 & Min-MD & 0.3891 & 0.0012 & 12.0000 \\
+DoS & ClassConditionalKNN & 0.4173 & GlobalKNN & 0.3863 & 0.0310 & 12.0000 \\
+Mirai & ClassConditionalKNN & 0.5628 & MD-Pred & 0.3910 & 0.1717 & 12.0000 \\
+Recon & ClassConditionalKNN & 0.5652 & GlobalKNN & 0.3883 & 0.1769 & 12.0000 \\
+Spoofing & ClassConditionalKNN & 0.5398 & MD-Pred & 0.3910 & 0.1488 & 12.0000 \\
+BruteForce & ClassConditionalKNN & 0.4157 & GlobalKNN & 0.3114 & 0.1043 & 12.0000 \\
+Web & ClassConditionalKNN & 0.5325 & MD-Pred & 0.4015 & 0.1310 & 12.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}
