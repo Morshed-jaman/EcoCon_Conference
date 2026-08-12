@@ -1,0 +1,407 @@
+experiment,path,type,description,rows_or_files,generating_script,status,publication_safe,notes
+Steps 1-7/support,processed/ambiguous_conflict_pool.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,processed/closed_set/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,processed/closed_set/test.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,processed/closed_set/train.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,processed/fresh_confirmation_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,processed/modeling_pool.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,processed/research_pool.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,results/attack_family_mapping.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/baseline_dev_metrics.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/baseline_efficiency.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/baseline_per_class_metrics.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/baseline_selection.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/baseline_test_metrics.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/class_mapping.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/closed_set_fine_label_counts.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/closed_set_split_counts.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/closed_set_split_manifest.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/confusion_matrix_lightgbm.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/confusion_matrix_random_forest.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/confusion_matrix_xgboost.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/dataset_inventory.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/dataset_schema.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/duplicate_audit.txt,txt,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8,results/ecocon_efficiency.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8,results/ecocon_known_family_rejection.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8,results/ecocon_md_raw_auc.csv,csv,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_bootstrap_ci.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_candidate_summary.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_config.json,json,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_efficiency.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,NO,inspected/indexed
+Step 8.6,results/ecocon_nos_family_comparison.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_fresh_confirmation.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_inner_holdouts.json,json,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_inner_results.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_macro_summary.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_method_audit.txt,txt,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_outer_detector_selection.json,json,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_outer_results.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_overconfident_rescue.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_statistics.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 8.6,results/ecocon_nos_success_criteria.json,json,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Steps 1-7/support,results/experiment_environment.txt,txt,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/family_counts.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/feature_budget_dev_efficiency.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/feature_budget_dev_metrics.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/feature_budget_dev_per_class.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/feature_budget_pareto.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/feature_budget_selection.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/feature_budget_sets.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/feature_budget_test_efficiency.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/feature_budget_test_metrics.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/feature_budget_test_per_class.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/feature_ranking_closed_set.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/file_record_counts.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/fine_label_counts.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/folder_summary.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/label_conflicts.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/loafo_budget_dev_metrics.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_budget_selection.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_class_mappings.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_feature_rankings.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_fold_counts.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_frozen_fold_configs.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_internal_dev_manifest.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/loafo_known_test_metrics.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_known_test_per_class.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_model_efficiency.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_raw_uncertainty_auc.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_selected_models.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_split_manifest.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/loafo_unknown_confidence_summary.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/loafo_unknown_forced_predictions.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/mahalanobis_distribution_summary.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/overconfident_unknown_rescue.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8,results/predictions/ecocon_md/BruteForce/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/BruteForce/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/BruteForce/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/DDoS/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/DDoS/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/DDoS/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/DoS/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/DoS/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/DoS/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Mirai/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Mirai/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Mirai/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Recon/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Recon/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Recon/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Spoofing/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Spoofing/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Spoofing/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Web/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Web/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Step 8,results/predictions/ecocon_md/Web/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Steps 1-7/support,results/predictions/lightgbm_test.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/BruteForce/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/BruteForce/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/BruteForce/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/DDoS/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/DDoS/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/DDoS/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/DoS/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/DoS/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/DoS/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Mirai/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Mirai/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Mirai/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Recon/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Recon/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Recon/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Spoofing/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Spoofing/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Spoofing/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Web/calibration.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Web/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/loafo/Web/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/random_forest_test.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/resource_budget/xgboost_10_test.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/resource_budget/xgboost_15_test.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/resource_budget/xgboost_20_test.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/resource_budget/xgboost_30_test.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/resource_budget/xgboost_39_test.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/resource_budget/xgboost_5_test.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8,results/predictions/step8/BruteForce/EcoConMD.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/BruteForce/Entropy.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/BruteForce/InverseMargin.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/BruteForce/MSP.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/BruteForce/ProbabilityConformal.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8,results/predictions/step8/DDoS/EcoConMD.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/DDoS/Entropy.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/DDoS/InverseMargin.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/DDoS/MSP.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/DDoS/ProbabilityConformal.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8,results/predictions/step8/DoS/EcoConMD.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/DoS/Entropy.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/DoS/InverseMargin.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/DoS/MSP.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/DoS/ProbabilityConformal.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8,results/predictions/step8/Mirai/EcoConMD.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Mirai/Entropy.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Mirai/InverseMargin.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Mirai/MSP.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Mirai/ProbabilityConformal.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8,results/predictions/step8/Recon/EcoConMD.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Recon/Entropy.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Recon/InverseMargin.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Recon/MSP.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Recon/ProbabilityConformal.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8,results/predictions/step8/Spoofing/EcoConMD.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Spoofing/Entropy.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Spoofing/InverseMargin.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Spoofing/MSP.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Spoofing/ProbabilityConformal.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8,results/predictions/step8/Web/EcoConMD.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,intermediate,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Web/Entropy.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Web/InverseMargin.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Web/MSP.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/step8/Web/ProbabilityConformal.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/BruteForce/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/BruteForce/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/DDoS/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/DDoS/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/DoS/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/DoS/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/Mirai/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/Mirai/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/Recon/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/Recon/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/Spoofing/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/Spoofing/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/Web/test_known.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/predictions/step8_5/Web/test_unknown.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/predictions/xgboost_test.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/research_pool_counts.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/research_pool_family_counts.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/risk_coverage_auc.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/risk_coverage_points.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/sampling_plan.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/schema_audit.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/selected_budget_vs_full.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8,results/selective_metrics_by_fold.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8,results/selective_metrics_summary.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step2_dataset_audit.txt,txt,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step3_cleaning_audit.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step3_config.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step4_config.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step4_split_audit.txt,txt,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step5_baseline_audit.txt,txt,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step5_class_weights.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step5_config.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step5_internal_dev_manifest.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Steps 1-7/support,results/step6_config.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step6_resource_budget_audit.txt,txt,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step7_config.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step7_loafo_audit.txt,txt,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_aurc.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_calibration_manifest.parquet,parquet,Saved project artifact/source,1,see script inventory/lineage,source,YES,binary not expanded
+Step 8.5,results/step8_5_config.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_efficiency.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_family_comparison.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_final_audit.txt,txt,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_final_comparison.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_fresh_confirmation.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_macro_summary.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_method_freeze.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_micro_summary.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_overconfident_rescue.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_risk_coverage.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_selective_by_fold.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_statistics.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_success_criteria.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8.5,results/step8_5_uadr_vs_known_rejection.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step8_config.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step8_family_comparison.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Step 8,results/step8_selective_audit.txt,txt,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step8_statistical_tests.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step8_success_criteria.json,json,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/step9_publication_assets_audit.txt,txt,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,results/uadr_vs_known_rejection.csv,csv,Saved project artifact/source,1,see script inventory/lineage,source,YES,inspected/indexed
+Steps 1-7/support,models/baselines/lightgbm.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/baselines/model_metadata.json,json,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,models/baselines/primary_model.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/baselines/random_forest.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/baselines/xgboost.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Step 8.5,models/ecocon_fuse/holdout_BruteForce.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8.5,models/ecocon_fuse/holdout_DDoS.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8.5,models/ecocon_fuse/holdout_DoS.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8.5,models/ecocon_fuse/holdout_Mirai.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8.5,models/ecocon_fuse/holdout_Recon.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8.5,models/ecocon_fuse/holdout_Spoofing.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8.5,models/ecocon_fuse/holdout_Web.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8.5,models/ecocon_fuse/metadata.json,json,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,inspected/indexed
+Step 8,models/ecocon_md/holdout_BruteForce.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8,models/ecocon_md/holdout_DDoS.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8,models/ecocon_md/holdout_DoS.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8,models/ecocon_md/holdout_Mirai.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8,models/ecocon_md/holdout_Recon.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8,models/ecocon_md/holdout_Spoofing.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8,models/ecocon_md/holdout_Web.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,binary not expanded
+Step 8,models/ecocon_md/metadata.json,json,Saved project artifact/source,1,see script inventory/lineage,intermediate,N/A,inspected/indexed
+Step 8.6,models/ecocon_nos/holdout_BruteForce.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,final,N/A,binary not expanded
+Step 8.6,models/ecocon_nos/holdout_DDoS.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,final,N/A,binary not expanded
+Step 8.6,models/ecocon_nos/holdout_DoS.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,final,N/A,binary not expanded
+Step 8.6,models/ecocon_nos/holdout_Mirai.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,final,N/A,binary not expanded
+Step 8.6,models/ecocon_nos/holdout_Recon.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,final,N/A,binary not expanded
+Step 8.6,models/ecocon_nos/holdout_Spoofing.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,final,N/A,binary not expanded
+Step 8.6,models/ecocon_nos/holdout_Web.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,final,N/A,binary not expanded
+Step 8.6,models/ecocon_nos/metadata.json,json,Saved project artifact/source,1,see script inventory/lineage,final,N/A,inspected/indexed
+Steps 1-7/support,models/loafo/holdout_BruteForce.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/loafo/holdout_DDoS.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/loafo/holdout_DoS.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/loafo/holdout_Mirai.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/loafo/holdout_Recon.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/loafo/holdout_Spoofing.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/loafo/holdout_Web.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/loafo/metadata.json,json,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,models/resource_budget/model_metadata.json,json,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,models/resource_budget/selected_budget_model.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/resource_budget/xgboost_10_features.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/resource_budget/xgboost_15_features.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/resource_budget/xgboost_20_features.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/resource_budget/xgboost_30_features.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/resource_budget/xgboost_39_features.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Steps 1-7/support,models/resource_budget/xgboost_5_features.joblib,joblib,Saved project artifact/source,1,see script inventory/lineage,source,N/A,binary not expanded
+Step 9,paper_assets/asset_manifest.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/audit/claim_registry.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/audit/do_not_claim.txt,txt,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/audit/efficiency_status.txt,txt,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/audit/limitations.md,md,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/audit/main_paper_figure_recommendation.md,md,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/audit/main_paper_table_recommendation.md,md,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/audit/presentation_asset_plan.md,md,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/audit/source_inventory.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/audit/step9_evidence_summary.md,md,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/audit/visual_integrity_audit.md,md,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/captions/figure_captions.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/captions/table_captions.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/data/contributions.md,md,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/data/key_numbers.json,json,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/data/latex_figure_snippets.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/data/method_narrative.md,md,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/data/results_narrative.md,md,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/diagrams/fig01_full_research_workflow.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/diagrams/fig01_full_research_workflow.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/diagrams/fig02_ecocon_nos_architecture.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/diagrams/fig02_ecocon_nos_architecture.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/diagrams/fig03_nested_open_set_protocol.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/diagrams/fig03_nested_open_set_protocol.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/diagrams/fig23_implementation_architecture.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/diagrams/fig23_implementation_architecture.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figure_data/fig04_dataset_family_distribution.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig05_closed_set_baselines.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig06_feature_budget.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig07_unknown_overconfidence.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig08_raw_ood_auc.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig09_family_uadr.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig10_macro_uadr_risk.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig11_uadr_vs_known_rejection_operating_point.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig12_coverage_risk_tradeoff.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig13_overconfident_unknown_rescue.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig14_detector_selection_matrix.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig15_inner_candidate_heatmap.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig16_unknown_forced_prediction_matrix.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig17_closed_set_confusion_matrix.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig18_fresh_confirmation.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig19_uadr_bootstrap_ci.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/fig20_paired_improvement.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/matrix_final_method_uadr.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figure_data/matrix_fresh_confirmation.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/figures/main_candidates/fig06_feature_budget.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig06_feature_budget.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig07_unknown_overconfidence.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig07_unknown_overconfidence.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig09_family_uadr.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig09_family_uadr.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig10_macro_uadr_risk.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig10_macro_uadr_risk.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig12_coverage_risk_tradeoff.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig12_coverage_risk_tradeoff.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig13_overconfident_unknown_rescue.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig13_overconfident_unknown_rescue.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig18_fresh_confirmation.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/main_candidates/fig18_fresh_confirmation.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/fig14_detector_selection_matrix.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/fig14_detector_selection_matrix.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/fig15_inner_candidate_heatmap.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/fig15_inner_candidate_heatmap.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/fig16_unknown_forced_prediction_matrix.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/fig16_unknown_forced_prediction_matrix.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/fig17_closed_set_confusion_matrix.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/fig17_closed_set_confusion_matrix.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/matrix_final_method_uadr.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/matrix_final_method_uadr.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/matrix_fresh_confirmation.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/presentation/matrices/matrix_fresh_confirmation.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig04_dataset_family_distribution.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig04_dataset_family_distribution.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig05_closed_set_baselines.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig05_closed_set_baselines.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig08_raw_ood_auc.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig08_raw_ood_auc.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig11_uadr_vs_known_rejection_operating_point.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig11_uadr_vs_known_rejection_operating_point.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig14_detector_selection_matrix.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig14_detector_selection_matrix.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig15_inner_candidate_heatmap.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig15_inner_candidate_heatmap.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig16_unknown_forced_prediction_matrix.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig16_unknown_forced_prediction_matrix.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig17_closed_set_confusion_matrix.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig17_closed_set_confusion_matrix.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig19_uadr_bootstrap_ci.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig19_uadr_bootstrap_ci.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig20_paired_improvement.pdf,pdf,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/figures/supplementary/fig20_paired_improvement.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/preview/figure_contact_sheet.png,png,Saved project artifact/source,1,see script inventory/lineage,final,YES,binary not expanded
+Step 9,paper_assets/preview/figure_gallery.html,html,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/preview/README.md,md,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table01_dataset_summary.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table01_dataset_summary.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table02_family_distribution.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table02_family_distribution.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table03_closed_set_baselines.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table03_closed_set_baselines.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table04_feature_budget.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table04_feature_budget.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table05_final_macro_comparison.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table05_final_macro_comparison.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table06_family_results.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table06_family_results.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table07_detector_selection.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table07_detector_selection.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table08_overconfident_rescue.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table08_overconfident_rescue.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table09_fresh_confirmation.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table09_fresh_confirmation.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table10_statistical_tests.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table10_statistical_tests.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table11_bootstrap_ci.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table11_bootstrap_ci.tex,tex,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Step 9,paper_assets/tables/table12_efficiency_UNVERIFIED.csv,csv,Saved project artifact/source,1,see script inventory/lineage,final,YES,inspected/indexed
+Steps 1-7/support,src/01_inspect_dataset.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/02_audit_mapping_and_counts.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/03_build_research_pool.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/04_create_leakage_safe_splits.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/05_train_closed_set_baselines.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/06_feature_budget_experiment.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/07_run_loafo_experiments.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Step 8.5,src/08_5_ecocon_fusion.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Step 8,src/08_6_ecocon_nested_open_set.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Step 8,src/08_selective_conformal_evaluation.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/09_build_publication_assets.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/__pycache__/01_inspect_dataset.cpython-313.pyc,pyc,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/__pycache__/02_audit_mapping_and_counts.cpython-313.pyc,pyc,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/__pycache__/03_build_research_pool.cpython-313.pyc,pyc,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/__pycache__/04_create_leakage_safe_splits.cpython-313.pyc,pyc,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/__pycache__/05_train_closed_set_baselines.cpython-313.pyc,pyc,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/__pycache__/06_feature_budget_experiment.cpython-313.pyc,pyc,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/__pycache__/07_run_loafo_experiments.cpython-313.pyc,pyc,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Step 8.5,src/__pycache__/08_5_ecocon_fusion.cpython-313.pyc,pyc,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Step 8,src/__pycache__/08_6_ecocon_nested_open_set.cpython-313.pyc,pyc,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Step 8,src/__pycache__/08_selective_conformal_evaluation.cpython-313.pyc,pyc,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,src/__pycache__/09_build_publication_assets.cpython-313.pyc,pyc,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Steps 1-7/support,tools/generate_complete_research_documentation.py,py,Saved project artifact/source,1,see script inventory/lineage,source,N/A,inspected/indexed
+Step 8.6,tools/refresh_ecocon_nos_efficiency.py,py,Saved project artifact/source,1,see script inventory/lineage,final,NO,inspected/indexed
