@@ -1,33 +1,31 @@
 # Figures Selected for Final Conference Manuscript
 
-## Figure 1
+## Figure 1 — EcoCon-NOS Leakage-Safe Nested Methodology
 
-EcoCon-NOS methodology / nested open-set detector selection
+Status: FINAL / SELECTED
 
-Status: selected
+## Figure 2 — Family-Wise UADR Comparison
 
-## Figure 2
+Files: `fig02_family_wise_uadr.png`, `fig02_family_wise_uadr.pdf`, `fig02_family_wise_uadr.svg`
 
-Family-wise UADR comparison
+Status: FINAL / SELECTED
 
-Files:
+## Figure 3 — High-Confidence Unseen-Attack Behavior and EcoCon-NOS Rescue
 
-- `fig02_family_wise_uadr.png`
-- `fig02_family_wise_uadr.pdf`
-- `fig02_family_wise_uadr.svg`
+Files: `fig03_high_confidence_failure_rescue.png`, `fig03_high_confidence_failure_rescue.pdf`, `fig03_high_confidence_failure_rescue.svg`
 
-Purpose: Primary per-family quantitative result.
+Purpose: Shows that unseen attack families can receive extreme XGBoost confidence and measures how often EcoCon-NOS rejects those high-confidence unknowns.
 
-Status: selected
+Status: FINAL / SELECTED
 
-## Figure 3
+## Figure 4 — Feature-Budget Selection and Test Performance
 
-High-confidence unseen-attack failure and EcoCon-NOS rescue
+Files: `fig04_feature_budget.png`, `fig04_feature_budget.pdf`, `fig04_feature_budget.svg`
 
-Status: pending
+Purpose: Shows why the 30-feature budget was selected using internal development data and reports its untouched official-test performance.
 
-## Figure 4
+Status: FINAL / SELECTED
 
-Feature-budget performance curve
+No additional figures are currently selected for the main conference manuscript.
 
-Status: optional / pending
+Other Step-9 figures remain supplementary/presentation candidates.

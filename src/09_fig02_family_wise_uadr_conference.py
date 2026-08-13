@@ -167,10 +167,12 @@ def build_figure(data: list[dict[str, float | str]]) -> None:
         if row["family"] == "DDoS":
             continue  # The near-tie annotation below contains the exact NOS value.
         inside = row["family"] == "Mirai"
-        ax.text(rect.get_x() + rect.get_width() / 2, value - 2.0 if inside else value + 1.3,
+        ax.text(rect.get_x() + rect.get_width() / 2, value - 4.0 if inside else value + 1.3,
                 f"{value:.2f}", ha="center", va="top" if inside else "bottom",
                 fontsize=5.3 if inside else 6.7,
-                color="white" if inside else "#713000", fontweight="bold", zorder=5)
+                color="white" if inside else "#713000", fontweight="bold", zorder=5,
+                bbox={"facecolor": COLORS["EcoConNOS"], "edgecolor": "none", "pad": 0.15}
+                if inside else None)
     for rect, row in zip(bars["EcoConMD"], data):
         value = 100.0 * float(row["EcoConMD"])
         if row["family"] in {"Mirai", "Recon", "BruteForce", "Web"}:

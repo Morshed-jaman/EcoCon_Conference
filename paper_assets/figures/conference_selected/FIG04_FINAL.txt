@@ -1,0 +1,20 @@
+Figure:
+fig04_feature_budget
+
+Purpose:
+Feature-budget selection and test-performance confirmation
+
+Generation:
+Python + matplotlib
+
+Model retraining:
+NO
+
+Scientific data modified:
+NO
+
+Selected for final conference manuscript:
+YES
+
+Status:
+FINAL
