@@ -91,9 +91,12 @@ def select_candidate(summary):
  return chosen,f"{chosen} selected by highest mean inner UADR with <=0.01 risk tie-break, then worst-fold UADR and fixed cost order.",row
 def pv(cal,s):
  a=np.sort(cal);return (1+len(a)-np.searchsorted(a,s,side='left'))/(len(a)+1)
+def selective_risk(wrong,accepted):
+ """Risk is undefined when no samples are accepted; never report zero risk."""
+ return wrong/accepted if accepted else float("nan")
 def outer_metric(h,method,k,u,scorek,scoreu,pcal):
  pk=pv(pcal,scorek);pu=pv(pcal,scoreu);rk=pk<=ALPHA;ru=pu<=ALPHA;correct=k.predicted_family.to_numpy()==k.true_family.to_numpy();ak=~rk;au=~ru;acc=ak.sum()+au.sum();wrong=(ak&~correct).sum()+au.sum();lab=np.r_[np.zeros(len(k)),np.ones(len(u))];ss=np.r_[scorek,scoreu]
- return {'held_out_family':h,'method':method,'known_rejection_rate':rk.mean(),'known_acceptance_rate':ak.mean(),'known_selective_risk':(~correct[ak]).mean(),'UADR':ru.mean(),'unknown_acceptance_rate':au.mean(),'coverage':acc/(len(k)+len(u)),'review_rate':1-acc/(len(k)+len(u)),'overall_selective_risk':wrong/acc,'AUROC':roc_auc_score(lab,ss),'AUPRC':average_precision_score(lab,ss),'known_count':len(k),'unknown_count':len(u),'known_rejected':rk.sum(),'unknown_rejected':ru.sum(),'accepted_known':ak.sum(),'accepted_unknown':au.sum(),'wrong_known_accepted':int((ak&~correct).sum())},rk,ru,pk,pu
+ return {'held_out_family':h,'method':method,'known_rejection_rate':rk.mean(),'known_acceptance_rate':ak.mean(),'known_selective_risk':(~correct[ak]).mean(),'UADR':ru.mean(),'unknown_acceptance_rate':au.mean(),'coverage':acc/(len(k)+len(u)),'review_rate':1-acc/(len(k)+len(u)),'overall_selective_risk':selective_risk(wrong,acc),'AUROC':roc_auc_score(lab,ss),'AUPRC':average_precision_score(lab,ss),'known_count':len(k),'unknown_count':len(u),'known_rejected':rk.sum(),'unknown_rejected':ru.sum(),'accepted_known':ak.sum(),'accepted_unknown':au.sum(),'wrong_known_accepted':int((ak&~correct).sum())},rk,ru,pk,pu
 def load_outer(h,split,pool,features):
  p=pd.read_parquet(LP/h/f'{split}.parquet');lookup=pool[['feature_hash',*features]].drop_duplicates('feature_hash');return p.merge(lookup,on='feature_hash',validate='many_to_one')
 def bootstrap_ci(row,rk,ru,k,u,seed):

@@ -20,7 +20,7 @@ EcoCon-MD addressed this by measuring predicted-class Mahalanobis atypicality in
 
 EcoCon-NOS reframed the problem as detector selection. Within each outer-training pool, up to 12 eligible fine labels become pseudo-unknowns. Seven candidate scores are evaluated at thresholds derived only from inner known validation. Mean inner UADR, risk tie-breaking, worst-fold UADR, and fixed cost order determine the detector before the real outer unknown is opened. The frozen map selected MD-Pred for DDoS and class-conditional k-nearest neighbors for the other six families.
 
-At approximately 5% known rejection, EcoCon-NOS achieved macro UADR 0.3873314571, coverage 0.7896324763, review rate 0.2103675237, and overall selective risk 0.4190400799. It beat EcoCon-MD on six of seven UADR folds; paired Wilcoxon p-values for NOS versus MD were 0.03125 for both UADR and overall risk. Mirai UADR was 0.99961—not perfect—and Web remained weak at 0.1860861104. Fresh unused samples confirmed several patterns within CICIoT2023, but are not external validation. Limitations include one dataset, only seven independent family folds, sampling-altered prevalence, analyst workload, imperfect detector choice, no deployment study, no physical power measurement, and a NOS efficiency benchmark that remains publication-unsafe. Steps 1–8.6 are complete and frozen; Step 9 publication assets are the next phase.
+At approximately 5% known rejection, EcoCon-NOS achieved macro UADR 0.3873314571, coverage 0.7896324763, review rate 0.2103675237, and overall selective risk 0.4190400799. It beat EcoCon-MD on six of seven UADR folds; paired Wilcoxon p-values for NOS versus MD were 0.03125 for both UADR and overall risk. Mirai UADR was 0.99961—not perfect—and Web remained weak at 0.1860861104. Fresh unused samples confirmed several patterns within CICIoT2023, but are not external validation. Limitations include one dataset, only seven held-out family folds with overlapping training sets, sampling-altered prevalence, analyst workload, imperfect detector choice, no deployment study, no physical power measurement, and a NOS efficiency benchmark that remains publication-unsafe. Steps 1–8.6 are complete and frozen; Step 9 publication assets are the next phase.
 
 
 # 2. Research Question and Problem Formulation
@@ -844,7 +844,7 @@ Risk-coverage and UADR-versus-known-rejection curves evaluate the complete thres
 
 # 27. Step 8 Statistical Analysis
 
-Only seven independent outer-family observations enter paired Wilcoxon tests. Step-8 comparisons are not significant at 0.05 and must not be overstated.
+Only seven paired outer-family observations with overlapping training sets enter paired Wilcoxon tests. Step-8 comparisons are not significant at 0.05 and must not be overstated.
 
 | outcome | comparison | median_paired_difference | effect_direction | wilcoxon_statistic | p_value | note |
 |---|---|---|---|---|---|---|
@@ -1242,7 +1242,7 @@ Frozen models, detector selections, thresholds, and alpha were reused without re
 
 # 52. Bootstrap Confidence Intervals
 
-The artifact uses 1,000 row-level bootstrap resamples. Intervals quantify within-fold sample variability for UADR and overall risk; they do not increase the seven independent outer-family folds.
+The artifact uses 1,000 row-level bootstrap resamples. Intervals quantify within-fold sample variability for UADR and overall risk; they do not increase the seven held-out family folds.
 
 | held_out_family | metric | estimate | ci_lower | ci_upper | bootstrap_resamples |
 |---|---|---|---|---|---|
@@ -1418,7 +1418,7 @@ Do not claim guaranteed zero-day detection; perfect unseen-attack detection; uni
 
 # 67. Limitations
 
-One primary dataset; fresh confirmation remains within it; LOAFO is a proxy for future unknowns; research sampling changes prevalence; conflicting identical vectors were removed; Web weakness; DoS difficulty; increased analyst review; imperfect detector selection; only seven independent folds; limited statistical power; row bootstrap does not create independent folds; no real deployment; no physical power measurement; unsafe NOS efficiency benchmark; and pseudo-unknown fine labels may not predict future family shifts.
+One primary dataset; fresh confirmation remains within it; LOAFO is a proxy for future unknowns; research sampling changes prevalence; conflicting identical vectors were removed; Web weakness; DoS difficulty; increased analyst review; imperfect detector selection; only seven folds with overlapping training sets; limited statistical power; row bootstrap does not create independent folds; no real deployment; no physical power measurement; unsafe NOS efficiency benchmark; and pseudo-unknown fine labels may not predict future family shifts.
 
 
 # 68. Final Research Contributions
@@ -2376,3 +2376,5 @@ Completed: Steps 1–8.6. Final method: EcoCon-NOS. Model development: FROZEN. N
 # Appendix E. Reproducibility and Integrity Notes
 
 All metrics in narrative claims trace to saved artifacts. No model was loaded for prediction, retrained, or serialized during documentation. No threshold, feature set, split, label mapping, alpha, detector candidate, detector selection, or result artifact was changed. Parquet files were not loaded in full. Binary models were counted and related metadata inspected. Any future reproduction must occur in a separate output namespace because current artifacts are frozen.
+
+The six reported comparisons (three baselines for each of UADR and overall selective risk) use unadjusted, two-sided paired Wilcoxon signed-rank tests on seven held-out families. Training sets overlap, so these family-level observations should not be described as independent replications. The NOS-versus-MD p-value is 0.03125 for each outcome; these are exploratory nominal results, not multiplicity-adjusted evidence of significance. Row-level bootstrap intervals quantify within-fold sample variability and do not resolve dependence between folds.

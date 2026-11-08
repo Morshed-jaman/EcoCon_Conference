@@ -152,3 +152,5 @@ Steps 1–8.6 are complete. EcoCon-NOS is final and frozen. No additional tuning
 ## Frozen-method restrictions
 
 Do not retrain XGBoost or any OOD detector; change features, budgets, mappings, alpha, thresholds, detector candidates, or selections; rerun test-driven experiments; or overwrite frozen results. Efficiency timing must remain uncited until a corrected benchmark is completed and audited.
+
+The six reported comparisons (three baselines for each of UADR and overall selective risk) use unadjusted, two-sided paired Wilcoxon signed-rank tests on seven held-out families. Training sets overlap, so these family-level observations should not be described as independent replications. The NOS-versus-MD p-value is 0.03125 for each outcome; these are exploratory nominal results, not multiplicity-adjusted evidence of significance. Row-level bootstrap intervals quantify within-fold sample variability and do not resolve dependence between folds.

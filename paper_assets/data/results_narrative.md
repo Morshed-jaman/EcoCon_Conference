@@ -31,24 +31,12 @@ The frozen map selects MD-Pred for DDoS and class-conditional kNN for the other 
 
 ## Workload, confirmation, and statistical scope
 
-NOS coverage 0.7896 implies review rate 0.2104. This is a material analyst-workload cost, not a free improvement. Fresh NOS UADR is 0.6346 on DDoS, 0.1810 on DoS, 0.9996 on Mirai, 0.3742 on Recon, and 0.1904 on Spoofing, with 5,000 saved rows per eligible family. This is confirmation within CICIoT2023, not external validation. The paired NOS-versus-MD UADR and risk p-values are both 0.03125, but n=7 gives coarse resolution. Bootstrap intervals do not change that independent-fold count.
+NOS coverage 0.7896 implies review rate 0.2104. This is a material analyst-workload cost, not a free improvement. Fresh NOS UADR is 0.6346 on DDoS, 0.1810 on DoS, 0.9996 on Mirai, 0.3742 on Recon, and 0.1904 on Spoofing, with 5,000 saved rows per eligible family. This is confirmation within CICIoT2023, not external validation. The paired NOS-versus-MD UADR and risk p-values are both 0.03125, but n=7 gives coarse resolution. Bootstrap intervals do not change the number of held-out families.
 
 ## Publication interpretation
 
 The supported conclusion is deliberately narrow: under the frozen resource-budgeted CICIoT2023 LOAFO protocol, training-only nested detector selection improves macro unseen-family detection and selective risk relative to fixed detectors at approximately five-percent known rejection. It rescues many high-confidence unknowns, especially Mirai, while retaining serious family-dependent weaknesses and a higher review burden. The evidence does not establish state of the art, arbitrary zero-day guarantees, external generalization, production latency, energy savings, or carbon reduction.
 
-## Family-specific results
+The largest EcoCon-NOS minus EcoCon-MD UADR gain is on Recon: 0.17473110195571326, or 17.47 percentage points, followed by Mirai at 16.78 percentage points. These are absolute percentage-point gains, not relative percentage improvements.
 
-EcoCon-NOS UADR is 0.5565 for DDoS, 0.0407 for DoS, 0.9996 for Mirai, 0.3230 for Recon, 0.2111 for Spoofing, 0.3943 for BruteForce, and 0.1861 for Web. DDoS is a small loss to MD, Spoofing is below entropy, and Web remains the clearest weakness. These values prevent a universal-superiority claim.
-
-## Nested choice and macro comparison
-
-The frozen map selects MD-Pred for DDoS and class-conditional kNN for the other six folds. This supports the motivation that useful uncertainty geometry varies with the outer training environment. MSP and entropy reach macro UADR 0.1166 and 0.1189; MD reaches 0.2929; Fuse reaches 0.3021; and NOS reaches 0.3873. Their similar known-rejection rates show that the gain is not caused by a radically different false-rejection allowance. NOS changes UADR by +0.0944 and overall risk by -0.0393 relative to MD.
-
-## Workload, confirmation, and statistical scope
-
-NOS coverage 0.7896 implies review rate 0.2104. This is a material analyst-workload cost, not a free improvement. Fresh NOS UADR is 0.6346 on DDoS, 0.1810 on DoS, 0.9996 on Mirai, 0.3742 on Recon, and 0.1904 on Spoofing, with 5,000 saved rows per eligible family. This is confirmation within CICIoT2023, not external validation. The paired NOS-versus-MD UADR and risk p-values are both 0.03125, but n=7 gives coarse resolution. Bootstrap intervals do not change that independent-fold count.
-
-## Publication interpretation
-
-The supported conclusion is deliberately narrow: under the frozen resource-budgeted CICIoT2023 LOAFO protocol, training-only nested detector selection improves macro unseen-family detection and selective risk relative to fixed detectors at approximately five-percent known rejection. It rescues many high-confidence unknowns, especially Mirai, while retaining serious family-dependent weaknesses and a higher review burden. The evidence does not establish state of the art, arbitrary zero-day guarantees, external generalization, production latency, energy savings, or carbon reduction.
+The six reported comparisons (three baselines for each of UADR and overall selective risk) use unadjusted, two-sided paired Wilcoxon signed-rank tests on seven held-out families. Training sets overlap, so these family-level observations should not be described as independent replications. The NOS-versus-MD p-value is 0.03125 for each outcome; these are exploratory nominal results, not multiplicity-adjusted evidence of significance. Row-level bootstrap intervals quantify within-fold sample variability and do not resolve dependence between folds.

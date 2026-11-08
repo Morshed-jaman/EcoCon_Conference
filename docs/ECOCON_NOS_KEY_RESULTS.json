@@ -1785,7 +1785,7 @@
   "limitations": [
     "single primary dataset",
     "fresh confirmation is within CICIoT2023",
-    "seven independent outer folds",
+    "seven outer folds with overlapping training sets",
     "Web weakness",
     "DoS difficulty",
     "no deployment validation",

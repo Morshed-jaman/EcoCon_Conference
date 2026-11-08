@@ -2,7 +2,7 @@
   "data": {
     "raw_rows": 46776700,
     "research_pool_rows": 637892,
-    "modeling_pool_rows": 0,
+    "modeling_pool_rows": 612115,
     "fine_labels": 34,
     "families": 8
   },
